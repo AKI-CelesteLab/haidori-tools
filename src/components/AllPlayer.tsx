@@ -25,8 +25,8 @@ export default function AllPlayer({
   const activeCount = Object.values(filters).flat().length;
 
   return (
-    <div className="bg-gray-100 w-full p-4 rounded-lg relative">
-      <div className="flex justify-between items-center mb-3">
+    <div className="bg-gray-100 w-full p-4 rounded-lg flex flex-col h-screen max-h-dvh">
+      <div className="flex justify-between items-center mb-3 flex-none">
         <h3 className="text-sm font-bold">未配置の選手（{players.length}）</h3>
         <button
           onClick={() => setIsModalOpen(true)}
@@ -50,22 +50,24 @@ export default function AllPlayer({
       )}
 
       {/* プレイヤー一覧 */}
-      <div className="grid grid-cols-4 lg:grid-cols-6 justify-items-center w-full gap-2">
-        {players.map((player) => {
-          const isSelected = selectedName === player.name;
-          return (
-            <div
-              key={player.name + player.class}
-              className={`cursor-pointer w-full max-w-32 transition-transform active:scale-95 ${isSelected ? "scale-105" : "opacity-80"}`}
-            >
-              <PlayerCard
-                player={player}
-                handleClick={() => onPlayerSelect(player)}
-                isSelected={isSelected}
-              />
-            </div>
-          );
-        })}
+      <div className="flex-1 overflow-y-auto min-h-0 pr-1 custom-scrollbar">
+        <div className="grid grid-cols-4 lg:grid-cols-6 justify-items-center w-full gap-2">
+          {players.map((player) => {
+            const isSelected = selectedName === player.name;
+            return (
+              <div
+                key={player.name + player.class}
+                className={`cursor-pointer w-full max-w-32 transition-transform active:scale-95 ${isSelected ? "scale-105" : "opacity-80"}`}
+              >
+                <PlayerCard
+                  player={player}
+                  handleClick={() => onPlayerSelect(player)}
+                  isSelected={isSelected}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
