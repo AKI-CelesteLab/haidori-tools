@@ -9,12 +9,14 @@ export default function RotationTool() {
     court,
     bench,
     allPlayers,
+    filters,
     selectedIndex,
     selectedAllName,
     isServe,
     isFirstServe,
     confirmTeam,
     reset,
+    toggleFilter,
     changeFirstServe,
     handlePlayerClick,
     handleAllPlayerClick,
@@ -133,6 +135,8 @@ export default function RotationTool() {
         players={allPlayers}
         onPlayerSelect={handleAllPlayerClick}
         selectedName={selectedAllName}
+        filters={filters}
+        onFilterToggle={toggleFilter}
       />
     </div>
   );

@@ -1,9 +1,9 @@
 import {StaticImageData} from "next/image";
 
-const categoryList = ["ユニフォーム", "妖", "3周年", "格ゲー"] as const;
-type Category = (typeof categoryList)[number];
+export const categoryList = ["ユニフォーム", "妖", "3周年", "格ゲー"] as const;
+export type Category = (typeof categoryList)[number];
 
-const schoolList = [
+export const schoolList = [
   "烏野高校",
   "音駒高校",
   "伊達工業高校",
@@ -24,15 +24,15 @@ const schoolList = [
   "戸美学園高校",
   "早流川工業高校",
 ] as const;
-type School = (typeof schoolList)[number];
+export type School = (typeof schoolList)[number];
 
-const positionList = ["WS", "MB", "S", "Li"] as const;
-type Position = (typeof positionList)[number];
+export const positionList = ["WS", "MB", "S", "Li"] as const;
+export type Position = (typeof positionList)[number];
 
-const typeList = ["グー", "チョキ", "パー"] as const;
-type Type = (typeof typeList)[number];
+export const typeList = ["グー", "チョキ", "パー"] as const;
+export type Type = (typeof typeList)[number];
 
-const classList = [
+export const classList = [
   "ノーマル",
   "コンディション",
   "テクニック",
@@ -42,7 +42,7 @@ const classList = [
   "アイコニック",
   "スーパーアイコニック",
 ] as const;
-type Class = (typeof classList)[number];
+export type Class = (typeof classList)[number];
 
 export type PlayerData = {
   name: string;
