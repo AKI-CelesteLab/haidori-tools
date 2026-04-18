@@ -7,7 +7,7 @@ export {default as hinata_crown} from "@/assets/KARASUNO/hinata_shouyou_crown.pn
 export {default as hinata_jersey} from "@/assets/KARASUNO/hinata_shouyou_jersey.png";
 export {default as hinata_amusementpark} from "@/assets/KARASUNO/hinata_shouyou_amusementpark.png";
 export {default as hinata_halloween} from "@/assets/KARASUNO/hinata_shouyou_halloween.png";
-export {default as hinata_wasoutaiken} from "@/assets/KAMOMEDAI/hinata_shouyou_wasoutaiken.png";
+export {default as hinata_wasoutaiken} from "@/assets/KARASUNO/hinata_shouyou_wasoutaiken.png";
 export {default as hinata_fightinggame} from "@/assets/KARASUNO/hinata_shouyou_fightinggame.png";
 export {default as hinata_supericonic} from "@/assets/KARASUNO/hinata_shouyou_supericonic.png";
 export {default as hinata_crown_supericonic} from "@/assets/KARASUNO/hinata_shouyou_crown_supericonic.png";
