@@ -1,9 +1,9 @@
 import {PlayerData} from "@/types/PlayerData";
-import {karasuno} from "./karasuno";
-import {nekoma} from "./nekoma";
-import {shiratorizawa} from "./shiratorizawa";
-import {fukuroudani} from "./fukuroudani";
-import {kamomedai} from "./kamomedai";
+import {karasuno} from "./烏野/karasuno";
+import {nekoma} from "./音駒/nekoma";
+import {shiratorizawa} from "./白鳥沢/shiratorizawa";
+import {fukuroudani} from "./梟谷/fukuroudani";
+import {kamomedai} from "./鴎台/kamomedai";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno,

@@ -5,7 +5,25 @@ import bokuto_koutarou_iconic_img from "@/assets/梟谷/木兎光太郎.png";
 import komi_haruki_iconic_img from "@/assets/梟谷/小見春樹.png";
 import washio_tatsuki_iconic_img from "@/assets/梟谷/鷲尾辰生.png";
 
-import {PlayerData} from "@/types/PlayerData";
+import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
+import {StaticImageData} from "next/image";
+
+const createFukurouDaniPlayer = (
+  name: string,
+  category: Category,
+  position: Position,
+  type: Type,
+  rarity: Class,
+  image: StaticImageData,
+): PlayerData => ({
+  name: name,
+  category: category,
+  school: "烏野高校",
+  position: position,
+  type: type,
+  class: rarity,
+  image: image,
+});
 
 export const fukuroudani: PlayerData[] = [
   {
