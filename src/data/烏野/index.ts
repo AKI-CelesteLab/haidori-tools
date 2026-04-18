@@ -1,5 +1,5 @@
 // 日向翔陽
-export {default as hinata} from "@/assets/烏野/日向翔陽.png";
+export {default as hinata} from "@/assets/烏野";
 export {default as hinata_uniform} from "@/assets/烏野/[制服]日向翔陽.png";
 export {default as hinata_summerfestival} from "@/assets/烏野/[夏祭り]日向翔陽.png";
 export {default as hinata_1st} from "@/assets/烏野/[１周年]日向翔陽.png";
