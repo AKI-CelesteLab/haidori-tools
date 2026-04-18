@@ -1,9 +1,9 @@
 import akaashi_keigi_3rd_img from "@/assets/梟谷/[3周年]赤葦京治.png";
-import akaashi_keigi_ayakashi_img from "@/assets/梟谷/[妖]赤葦京治.png";
+import akaashi_keigi_ayakashi_supericonic_img from "@/assets/梟谷/[妖]赤葦京治_スーパーアイコニック.png";
 import bokuto_koutarou_3rd_img from "@/assets/梟谷/[3周年]木兎光太郎.png";
-import bokuto_koutarou_iconic_img from "@/assets/梟谷/[アイコニック]木兎光太郎.png";
-import komi_haruki_iconic_img from "@/assets/梟谷/[アイコニック]小見春樹.png";
-import washio_tatsuki_iconic_img from "@/assets/梟谷/[アイコニック]鷲尾辰生.png";
+import bokuto_koutarou_iconic_img from "@/assets/梟谷/木兎光太郎.png";
+import komi_haruki_iconic_img from "@/assets/梟谷/小見春樹.png";
+import washio_tatsuki_iconic_img from "@/assets/梟谷/鷲尾辰生.png";
 
 import {PlayerData} from "@/types/PlayerData";
 
@@ -24,7 +24,7 @@ export const fukuroudani: PlayerData[] = [
     position: "S",
     type: "チョキ",
     class: "スーパーアイコニック",
-    image: akaashi_keigi_ayakashi_img,
+    image: akaashi_keigi_ayakashi_supericonic_img,
   },
   {
     name: "【3周年】木兎光太郎",

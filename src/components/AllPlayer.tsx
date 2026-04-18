@@ -25,7 +25,7 @@ export default function AllPlayer({
   const activeCount = Object.values(filters).flat().length;
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg relative">
+    <div className="bg-gray-100 w-full p-4 rounded-lg relative">
       <div className="flex justify-between items-center mb-3">
         <h3 className="text-sm font-bold">未配置の選手（{players.length}）</h3>
         <button

@@ -1,4 +1,4 @@
-import kuroo_tetsurou_iconic_img from "@/assets/音駒/[アイコニック]黒尾鉄朗.png";
+import kuroo_tetsurou_iconic_img from "@/assets/音駒/黒尾鉄朗.png";
 
 import {PlayerData} from "@/types/PlayerData";
 
