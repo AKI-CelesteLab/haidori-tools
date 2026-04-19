@@ -2,43 +2,52 @@ import {StaticImageData} from "next/image";
 
 export const categoryList = [
   "ユニフォーム",
-  "制服",
-  "探偵",
-  "プール掃除",
-  "水着",
-  "夏祭り",
-  "職業体験",
-  "文化祭",
-  "雪遊び",
-  "Xmas",
-  "新年",
-  "1周年",
-  "バーガー",
-  "梅雨",
-  "花火",
-  "王冠",
-  "RPG",
-  "サバゲ",
-  "スパイ",
-  "ジャージ",
-  "文化祭2",
-  "Xmas2",
-  "新年2",
-  "2周年",
-  "中学生",
-  "夏祭り2",
-  "仮装",
-  "アート2",
-  "文化祭３",
-  "遊園地",
-  "妖",
-  "焼き芋",
-  "ハロウィン",
-  "Xmas3",
-  "寝正月",
-  "和装体験",
-  "3周年",
-  "格ゲー",
+  "制服", // uniform
+  "プール掃除", // poolcleaning
+  "水着", // swimwear
+  "夏祭り", // summerfestival
+  "探偵", // detective
+  "職業体験", // jobshadowing
+  "文化祭", // culturefestival
+  "Xmas", // xmas
+  "新年", // newyear
+  "雪遊び", // playingsnow
+  "1周年", // 1st
+  "サバゲ", // survivalgame
+  "RPG", // rpg
+  "路地裏", // rojiura
+  "バーガー", // burgur
+  "梅雨", // rainyseason
+  "キャンプ", // camp
+  "花火", // fireworks
+  "王冠", // crown
+  "バカンス", // vacation
+  "スパイ", // spy
+  "カンフー", // kungfu
+  "仮装", // costume
+  "甲冑", // armor
+  "文化祭2", // culturefestival2
+  "ジャージ", // jersey
+  "Xmas2", // xmas2
+  "新年2", // newyear2
+  "路地裏2", // rojiura2
+  "2周年", // 2nd
+  "遊園地", // amusementpark
+  "妖", // ayakashi
+  "中学生", // middleschool
+  "職業体験2", // jobshadowing2
+  "アート2", // art2
+  "サバゲ2", // survivalgame2
+  "水着2", // swimwear2
+  "夏祭り2", // summerfestival2
+  "焼き芋", // yakiimo
+  "ハロウィン", // halloween
+  "文化祭３", // culturefestival3
+  "Xmas3", // xmas3
+  "寝正月", // lyinglow
+  "和装体験", // wasoutaiken
+  "3周年", // 3rd
+  "格ゲー", // fightinggame
 ] as const;
 export type Category = (typeof categoryList)[number];
 
