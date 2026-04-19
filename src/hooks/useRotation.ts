@@ -191,12 +191,12 @@ export const useRotation = () => {
           if (!(idx1 > 5 && idx2 > 5)) {
             liSubCounter--;
             setLiSubstituteCounter(liSubCounter);
-            if (liSubCounter > 0) substitute();
+            if (liSubCounter >= 0) substitute();
           }
         } else if (isStart) {
           subCounter--;
           setSubstituteCounter(subCounter);
-          if (subCounter > 0) substitute();
+          if (subCounter >= 0) substitute();
         } else {
           substitute();
         }
