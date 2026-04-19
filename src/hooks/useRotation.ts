@@ -183,9 +183,7 @@ export const useRotation = () => {
         let subCounter = substituteCounter;
         let liSubCounter = liSubstituteCounter;
 
-        const isLiSubstitute =
-          (p1.position === "Li" && idx1 > 5) ||
-          (p2.position === "Li" && idx2 > 5);
+        const isLiSubstitute = p1.position === "Li" || p2.position === "Li";
 
         const isCourt = idx1 < 6 && idx2 < 6;
         const isBench = idx1 >= 6 && idx2 >= 6;
@@ -204,9 +202,7 @@ export const useRotation = () => {
           } else {
             substitute();
           }
-        }
-
-        if (!isStart) substitute();
+        } else if (!isStart) substitute();
 
         return next;
       });
