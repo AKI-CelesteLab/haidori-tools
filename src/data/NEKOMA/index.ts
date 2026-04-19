@@ -1,1 +1,1 @@
-export {default as kuroo} from "@/assets/NEKOMA/kuro_tetsurou.png";
+export {default as kuroo} from "@/assets/NEKOMA/kuroo_tetsurou.png";

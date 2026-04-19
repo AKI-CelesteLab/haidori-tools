@@ -9,5 +9,5 @@ export {default as komi} from "@/assets/FUKUROUDANI/komi_haruki.png";
 export {default as washio} from "@/assets/FUKUROUDANI/washio_tatsuki.png";
 
 // 赤葦京治
-export {default as akaashi_3rd} from "@/assets/FUKUROUDANI/akaashi_keigi_3rd.png";
-export {default as akaashi_ayakashi_supericonic} from "@/assets/FUKUROUDANI/akaashi_keigi_ayakashi_supericonic.png";
+export {default as akaashi_3rd} from "@/assets/FUKUROUDANI/akaashi_keiji_3rd.png";
+export {default as akaashi_ayakashi_supericonic} from "@/assets/FUKUROUDANI/akaashi_keiji_ayakashi_supericonic.png";
