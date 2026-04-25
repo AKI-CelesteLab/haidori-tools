@@ -2,14 +2,14 @@ import {PlayerData} from "@/types/PlayerData";
 import {karasuno} from "./KARASUNO/karasuno";
 import {nekoma} from "./NEKOMA/nekoma";
 import {shiratorizawa} from "./SHIRATORIZAWA/shiratorizawa";
-import {fukuroudani} from "./FUKUROUDANI/fukuroudani";
+import {fukurodani} from "./FUKURODANI/fukurodani";
 import {kamomedai} from "./KAMOMEDAI/kamomedai";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
   ...nekoma, // 音駒
   ...shiratorizawa, // 白鳥沢
-  ...fukuroudani, // 梟谷
+  ...fukurodani, // 梟谷
   ...kamomedai, // 鴎台
 ];
 
@@ -34,3 +34,12 @@ export const PLAYER_LIST: PlayerData[] = [
 //   class: rarity,
 //   image: image,
 // });
+
+// createPlayer(
+//     "【】",
+//     "",
+//     "",
+//     "チョキ",
+//     "アイコニック",
+//     Img.,
+//   ),

@@ -20,7 +20,7 @@ const createPlayer = (
   image: image,
 });
 
-export const fukuroudani: PlayerData[] = [
+export const fukurodani: PlayerData[] = [
   // 木兎光太郎
   createPlayer(
     "木兎光太郎",
