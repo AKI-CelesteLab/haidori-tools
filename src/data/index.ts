@@ -5,15 +5,26 @@ import {shiratorizawa} from "./SHIRATORIZAWA/shiratorizawa";
 import {fukurodani} from "./FUKURODANI/fukurodani";
 import {kamomedai} from "./KAMOMEDAI/kamomedai";
 import {dateko} from "./DATEKO/dateko";
+import {seijoh} from "./SEIJOH/seijoh";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
   ...nekoma, // 音駒
   ...dateko, // 伊達工
+  ...seijoh, // 青葉城西
   ...shiratorizawa, // 白鳥沢
   ...fukurodani, // 梟谷
   ...kamomedai, // 鴎台
 ];
+
+// createPlayer(
+//     "【】",
+//     "",
+//     "",
+//     "チョキ",
+//     "アイコニック",
+//     Img.,
+//   ),
 
 // import * as Img from "./index";
 
@@ -37,11 +48,4 @@ export const PLAYER_LIST: PlayerData[] = [
 //   image: image,
 // });
 
-// createPlayer(
-//     "【】",
-//     "",
-//     "",
-//     "チョキ",
-//     "アイコニック",
-//     Img.,
-//   ),
+// export const : PlayerData[] = [];

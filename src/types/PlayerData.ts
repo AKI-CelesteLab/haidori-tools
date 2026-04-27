@@ -9,6 +9,7 @@ export const categoryList = [
   "探偵", // detective
   "職業体験", // jobshadowing
   "文化祭", // culturefestival
+  "アート", // art
   "Xmas", // xmas
   "新年", // newyear
   "雪遊び", // playingsnow
