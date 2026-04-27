@@ -4,10 +4,12 @@ import {nekoma} from "./NEKOMA/nekoma";
 import {shiratorizawa} from "./SHIRATORIZAWA/shiratorizawa";
 import {fukurodani} from "./FUKURODANI/fukurodani";
 import {kamomedai} from "./KAMOMEDAI/kamomedai";
+import {dateko} from "./DATEKO/dateko";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
   ...nekoma, // 音駒
+  ...dateko, // 伊達工
   ...shiratorizawa, // 白鳥沢
   ...fukurodani, // 梟谷
   ...kamomedai, // 鴎台
