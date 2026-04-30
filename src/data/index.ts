@@ -8,6 +8,7 @@ import {dateko} from "./DATEKO/dateko";
 import {seijoh} from "./SEIJOH/seijoh";
 import {tokonami} from "./TOKONAMI/tokonami";
 import {ogiminami} from "./OGIMINAMI/ogiminami";
+import {kakugawa} from "./KAKUGAWA/kakugawa";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
@@ -16,6 +17,7 @@ export const PLAYER_LIST: PlayerData[] = [
   ...seijoh, // 青葉城西
   ...tokonami, // 常波
   ...ogiminami, // 扇南
+  ...kakugawa, // 角川
   ...shiratorizawa, // 白鳥沢
   ...fukurodani, // 梟谷
   ...kamomedai, // 鴎台
