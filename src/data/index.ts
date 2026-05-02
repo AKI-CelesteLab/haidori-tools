@@ -7,6 +7,7 @@ import {tokonami} from "./TOKONAMI/tokonami";
 import {ogiminami} from "./OGIMINAMI/ogiminami";
 import {kakugawa} from "./KAKUGAWA/kakugawa";
 import {jozenji} from "./JOZENJI/jozenji";
+import {wakunan} from "./WAKUNAN/wakunan";
 import {shiratorizawa} from "./SHIRATORIZAWA/shiratorizawa";
 import {fukurodani} from "./FUKURODANI/fukurodani";
 import {kamomedai} from "./KAMOMEDAI/kamomedai";
@@ -20,6 +21,7 @@ export const PLAYER_LIST: PlayerData[] = [
   ...ogiminami, // 扇南
   ...kakugawa, // 角川
   ...jozenji, // 条善寺
+  ...wakunan, // 和久谷南
   ...shiratorizawa, // 白鳥沢
   ...fukurodani, // 梟谷
   ...kamomedai, // 鴎台
