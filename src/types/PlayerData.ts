@@ -43,7 +43,7 @@ export const categoryList = [
   "夏祭り2", // summerfestival2
   "焼き芋", // yakiimo
   "ハロウィン", // halloween
-  "文化祭３", // culturefestival3
+  "文化祭3", // culturefestival3
   "Xmas3", // xmas3
   "寝正月", // lyinglow
   "和装体験", // wasotaiken

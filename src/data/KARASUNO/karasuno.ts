@@ -193,8 +193,8 @@ export const karasuno: PlayerData[] = [
     Img.kageyama_middleschool,
   ),
   createPlayer(
-    "【文化祭３】影山飛雄",
-    "文化祭３",
+    "【文化祭3】影山飛雄",
+    "文化祭3",
     "S",
     "パー",
     "アイコニック",
