@@ -10,6 +10,7 @@ import {jozenji} from "./JOZENJI/jozenji";
 import {wakunan} from "./WAKUNAN/wakunan";
 import {shiratorizawa} from "./SHIRATORIZAWA/shiratorizawa";
 import {fukurodani} from "./FUKURODANI/fukurodani";
+import {tsubakihara} from "./TSUBAKIHARA/tsubakihara";
 import {kamomedai} from "./KAMOMEDAI/kamomedai";
 
 export const PLAYER_LIST: PlayerData[] = [
@@ -24,6 +25,7 @@ export const PLAYER_LIST: PlayerData[] = [
   ...wakunan, // 和久谷南
   ...shiratorizawa, // 白鳥沢
   ...fukurodani, // 梟谷
+  ...tsubakihara, // 椿原
   ...kamomedai, // 鴎台
 ];
 
