@@ -15,6 +15,7 @@ import {kamomedai} from "./KAMOMEDAI/kamomedai";
 import {inarizaki} from "./INARIZAKI/inarizaki";
 import {ubugawa} from "./UBUGAWA/ubugawa";
 import {shinzen} from "./SHINZEN/shinzen";
+import {itachiyama} from "./ITACHIYAMA/itachiyama";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
@@ -33,6 +34,7 @@ export const PLAYER_LIST: PlayerData[] = [
   ...fukurodani, // 梟谷
   ...tsubakihara, // 椿原
   ...kamomedai, // 鴎台
+  ...itachiyama, // 井闥山
 ];
 
 // createPlayer(
