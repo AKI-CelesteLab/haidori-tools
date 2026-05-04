@@ -23,6 +23,7 @@ export {default as koganegawa_uniform} from "@/assets/DATEKO/koganegawa_kanji_un
 export {default as koganegawa_jobshadowing} from "@/assets/DATEKO/koganegawa_kanji_jobshadowing.png";
 export {default as koganegawa_spy} from "@/assets/DATEKO/koganegawa_kanji_spy.png";
 export {default as koganegawa_yakiimo} from "@/assets/DATEKO/koganegawa_kanji_yakiimo.png";
+export {default as koganegawa_fightinggame} from "@/assets/DATEKO/koganegawa_kanji_fightinggame.png";
 export {default as koganegawa_supericonic} from "@/assets/DATEKO/koganegawa_kanji_supericonic.png";
 
 // 小原豊

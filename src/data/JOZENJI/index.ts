@@ -4,6 +4,7 @@ export {default as terushima_uniform} from "@/assets/JOZENJI/terushima_yuji_unif
 export {default as terushima_playingsnow} from "@/assets/JOZENJI/terushima_yuji_playingsnow.png";
 export {default as terushima_spy} from "@/assets/JOZENJI/terushima_yuji_spy.png";
 export {default as terushima_ayakashi} from "@/assets/JOZENJI/terushima_yuji_ayakashi.png";
+export {default as terushima_fightinggame} from "@/assets/JOZENJI/terushima_yuji_fightinggame.png";
 
 // 母畑和馬
 export {default as bobata} from "@/assets/JOZENJI/bobata_kazuma.png";

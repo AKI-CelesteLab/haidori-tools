@@ -367,6 +367,14 @@ export const karasuno: PlayerData[] = [
     Img.nishinoya_uniform,
   ),
   createPlayer(
+    "【Xmas】西谷夕",
+    "Xmas",
+    "Li",
+    "グー",
+    "アイコニック",
+    Img.nishinoya_xmas,
+  ),
+  createPlayer(
     "【バーガー】西谷夕",
     "バーガー",
     "Li",

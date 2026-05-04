@@ -49,6 +49,7 @@ export {default as yamaguchi_yakiimo} from "@/assets/KARASUNO/yamaguchi_tadashi_
 // 西谷夕
 export {default as nishinoya} from "@/assets/KARASUNO/nishinoya_yu.png";
 export {default as nishinoya_uniform} from "@/assets/KARASUNO/nishinoya_yu_uniform.png";
+export {default as nishinoya_xmas} from "@/assets/KARASUNO/nishinoya_yu_xmas.png";
 export {default as nishinoya_burger} from "@/assets/KARASUNO/nishinoya_yu_burger.png";
 export {default as nishinoya_culturefestival2} from "@/assets/KARASUNO/nishinoya_yu_culturefestival2.png";
 export {default as nishinoya_2nd} from "@/assets/KARASUNO/nishinoya_yu_2nd.png";

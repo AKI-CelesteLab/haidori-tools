@@ -187,6 +187,14 @@ export const dateko: PlayerData[] = [
     Img.koganegawa_yakiimo,
   ),
   createPlayer(
+    "【格ゲー】黄金川貫至",
+    "格ゲー",
+    "S",
+    "パー",
+    "アイコニック",
+    Img.koganegawa_fightinggame,
+  ),
+  createPlayer(
     "黄金川貫至",
     "ユニフォーム",
     "S",

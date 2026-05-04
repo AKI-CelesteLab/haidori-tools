@@ -62,6 +62,14 @@ export const jozenji: PlayerData[] = [
     "アイコニック",
     Img.terushima_ayakashi,
   ),
+  createPlayer(
+    "【格ゲー】照島遊児",
+    "格ゲー",
+    "WS",
+    "グー",
+    "アイコニック",
+    Img.terushima_fightinggame,
+  ),
 
   // 母畑和馬
   createPlayer(
