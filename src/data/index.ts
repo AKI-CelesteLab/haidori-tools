@@ -14,6 +14,7 @@ import {tsubakihara} from "./TSUBAKIHARA/tsubakihara";
 import {kamomedai} from "./KAMOMEDAI/kamomedai";
 import {inarizaki} from "./INARIZAKI/inarizaki";
 import {ubugawa} from "./UBUGAWA/ubugawa";
+import {shinzen} from "./SHINZEN/shinzen";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
@@ -27,6 +28,7 @@ export const PLAYER_LIST: PlayerData[] = [
   ...wakunan, // 和久谷南
   ...shiratorizawa, // 白鳥沢
   ...ubugawa, // 生川
+  ...shinzen, // 森然
   ...inarizaki, // 稲荷崎
   ...fukurodani, // 梟谷
   ...tsubakihara, // 椿原
