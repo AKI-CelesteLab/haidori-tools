@@ -95,6 +95,14 @@ export const nekoma: PlayerData[] = [
     Img.kozume_lyinglow,
   ),
   createPlayer(
+    "【思い出】狐爪研磨",
+    "思い出",
+    "S",
+    "グー",
+    "アイコニック",
+    Img.kozume_memories,
+  ),
+  createPlayer(
     "狐爪研磨",
     "ユニフォーム",
     "S",
@@ -183,6 +191,14 @@ export const nekoma: PlayerData[] = [
     "パー",
     "アイコニック",
     Img.kuroo_wasotaiken,
+  ),
+  createPlayer(
+    "【思い出】黒尾鉄朗",
+    "思い出",
+    "MB",
+    "チョキ",
+    "アイコニック",
+    Img.kuroo_memories,
   ),
   createPlayer(
     "【文化祭2】黒尾鉄朗",
