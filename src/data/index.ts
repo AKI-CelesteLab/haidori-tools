@@ -16,6 +16,7 @@ import {inarizaki} from "./INARIZAKI/inarizaki";
 import {ubugawa} from "./UBUGAWA/ubugawa";
 import {shinzen} from "./SHINZEN/shinzen";
 import {itachiyama} from "./ITACHIYAMA/itachiyama";
+import {nohebi} from "./NOHEBI/nohebi";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
@@ -35,6 +36,7 @@ export const PLAYER_LIST: PlayerData[] = [
   ...tsubakihara, // 椿原
   ...kamomedai, // 鴎台
   ...itachiyama, // 井闥山
+  ...nohebi, // 戸美
 ];
 
 // createPlayer(
