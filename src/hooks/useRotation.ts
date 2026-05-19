@@ -4,6 +4,7 @@ import {PLAYER_LIST} from "@/data";
 import {FiltersType} from "@/types/Filters";
 import {initialMembers} from "@/data/initialMembers";
 import {loadTeam, saveTeam} from "@/lib/teamStorage";
+import {getSharedTeamFromURL, copyShareURL} from "@/lib/teamShare";
 
 // 選択状態の型定義
 type Selection =
@@ -30,8 +31,14 @@ export const useRotation = () => {
   const [team, setTeam] = useState<PlayerData[]>(initialMembers);
   const [members, setMembers] = useState<PlayerData[]>(team);
 
-  // IndexedDB からチームを復元
+  // URL パラメータ優先、なければ IndexedDB からチームを復元
   useEffect(() => {
+    const fromURL = getSharedTeamFromURL();
+    if (fromURL) {
+      setTeam(fromURL);
+      setMembers(fromURL);
+      return;
+    }
     loadTeam()
       .then((saved) => {
         if (saved) {
@@ -350,8 +357,13 @@ export const useRotation = () => {
     setCounter((prev) => prev + 1);
   }, [members, counter, isServe, rotate]);
 
+  const shareTeam = useCallback((): Promise<boolean> => {
+    return copyShareURL(members);
+  }, [members]);
+
   return {
     members,
+    shareTeam,
     allPlayers,
     filters,
     // 既存のselectedIndexを使っている箇所との互換性のため

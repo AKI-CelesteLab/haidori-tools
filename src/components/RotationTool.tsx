@@ -3,6 +3,7 @@
 import {useRotation} from "@/hooks/useRotation";
 import PlayerCard from "./PlayerCard";
 import AllPlayer from "./AllPlayer";
+import {useState} from "react";
 
 export default function RotationTool() {
   const {
@@ -23,7 +24,18 @@ export default function RotationTool() {
     handlePlayerClick,
     handleAllPlayerClick,
     nextRotate,
+    shareTeam,
   } = useRotation();
+
+  const [copied, setCopied] = useState(false);
+
+  const handleShare = async () => {
+    const ok = await shareTeam();
+    if (ok) {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   // 位置のラベル設定
   const backLabels = ["4", "5", "6"]; // members[2], [1], [0] に対応
@@ -66,6 +78,21 @@ export default function RotationTool() {
               className="bg-blue-600 text-white px-4 py-2 rounded-xl font-bold active:scale-95 transition text-sm"
             >
               次へ({!isServe ? "サーブ" : "レシーブ"})
+            </button>
+            <button
+              onClick={handleShare}
+              disabled={isStart}
+              className={
+                "px-3 py-1.5 text-sm rounded-lg shadow-sm transition" +
+                " " +
+                (copied
+                  ? "bg-gray-400 text-white"
+                  : isStart
+                    ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                    : "bg-purple-500 text-white active:scale-95")
+              }
+            >
+              {copied ? "コピー済み" : "共有"}
             </button>
           </div>
         </div>
