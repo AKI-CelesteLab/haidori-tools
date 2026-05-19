@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.bokuto,
+    "/assets/FUKURODANI/bokuto_kotaro.png",
   ),
   createPlayer(
     "【夏祭り】木兎光太郎",
@@ -36,7 +34,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.bokuto_summerfestival,
+    "/assets/FUKURODANI/bokuto_kotaro_summerfestival.png",
   ),
   createPlayer(
     "【Xmas】木兎光太郎",
@@ -44,7 +42,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.bokuto_xmas,
+    "/assets/FUKURODANI/bokuto_kotaro_xmas.png",
   ),
   createPlayer(
     "【制服】木兎光太郎",
@@ -52,7 +50,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.bokuto_uniform,
+    "/assets/FUKURODANI/bokuto_kotaro_uniform.png",
   ),
   createPlayer(
     "【キャンプ】木兎光太郎",
@@ -60,7 +58,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.bokuto_camp,
+    "/assets/FUKURODANI/bokuto_kotaro_camp.png",
   ),
   createPlayer(
     "【2周年】木兎光太郎",
@@ -68,7 +66,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.bokuto_2nd,
+    "/assets/FUKURODANI/bokuto_kotaro_2nd.png",
   ),
   createPlayer(
     "【焼き芋】木兎光太郎",
@@ -76,7 +74,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.bokuto_yakiimo,
+    "/assets/FUKURODANI/bokuto_kotaro_yakiimo.png",
   ),
   createPlayer(
     "【3周年】木兎光太郎",
@@ -84,7 +82,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.bokuto_3rd,
+    "/assets/FUKURODANI/bokuto_kotaro_3rd.png",
   ),
 
   // 木葉秋紀
@@ -94,7 +92,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.konoha,
+    "/assets/FUKURODANI/konoha_akinori.png",
   ),
   createPlayer(
     "【探偵】木葉秋紀",
@@ -102,7 +100,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.konoha_detective,
+    "/assets/FUKURODANI/konoha_akinori_detective.png",
   ),
   createPlayer(
     "【梅雨】木葉秋紀",
@@ -110,7 +108,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.konoha_rainyseason,
+    "/assets/FUKURODANI/konoha_akinori_rainyseason.png",
   ),
   createPlayer(
     "【路地裏2】木葉秋紀",
@@ -118,7 +116,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.konoha_rojiura2,
+    "/assets/FUKURODANI/konoha_akinori_rojiura2.png",
   ),
   createPlayer(
     "【水着2】木葉秋紀",
@@ -126,7 +124,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.konoha_swimwear2,
+    "/assets/FUKURODANI/konoha_akinori_swimwear2.png",
   ),
 
   // 猿杙大和
@@ -136,7 +134,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.sarukui,
+    "/assets/FUKURODANI/sarukui_yamato.png",
   ),
   createPlayer(
     "【ハロウィン】猿杙大和",
@@ -144,7 +142,7 @@ export const fukurodani: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.sarukui_halloween,
+    "/assets/FUKURODANI/sarukui_yamato_halloween.png",
   ),
 
   // 小見春樹
@@ -154,7 +152,7 @@ export const fukurodani: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.komi,
+    "/assets/FUKURODANI/komi_haruki.png",
   ),
   createPlayer(
     "【路地裏2】小見春樹",
@@ -162,7 +160,7 @@ export const fukurodani: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.komi_rojiura2,
+    "/assets/FUKURODANI/komi_haruki_rojiura2.png",
   ),
 
   // 尾長渉
@@ -172,7 +170,7 @@ export const fukurodani: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.onaga,
+    "/assets/FUKURODANI/onaga_wataru.png",
   ),
   createPlayer(
     "尾長渉",
@@ -180,7 +178,7 @@ export const fukurodani: PlayerData[] = [
     "MB",
     "パー",
     "スーパーアイコニック",
-    Img.onaga_supericonic,
+    "/assets/FUKURODANI/onaga_wataru_supericonic.png",
   ),
 
   // 鷲尾辰生
@@ -190,7 +188,7 @@ export const fukurodani: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.washio,
+    "/assets/FUKURODANI/washio_tatsuki.png",
   ),
   createPlayer(
     "【ハロウィン】鷲尾辰生",
@@ -198,7 +196,7 @@ export const fukurodani: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.washio_halloween,
+    "/assets/FUKURODANI/washio_tatsuki_halloween.png",
   ),
 
   // 赤葦京治
@@ -208,7 +206,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.akaashi,
+    "/assets/FUKURODANI/akaashi_keiji.png",
   ),
   createPlayer(
     "【夏祭り】赤葦京治",
@@ -216,7 +214,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.akaashi_summerfestival,
+    "/assets/FUKURODANI/akaashi_keiji_summerfestival.png",
   ),
   createPlayer(
     "【制服】赤葦京治",
@@ -224,7 +222,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.akaashi_uniform,
+    "/assets/FUKURODANI/akaashi_keiji_uniform.png",
   ),
   createPlayer(
     "【バーガー】赤葦京治",
@@ -232,7 +230,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.akaashi_burgur,
+    "/assets/FUKURODANI/akaashi_keiji_burgur.png",
   ),
   createPlayer(
     "【仮装】赤葦京治",
@@ -240,7 +238,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.akaashi_costume,
+    "/assets/FUKURODANI/akaashi_keiji_costume.png",
   ),
   createPlayer(
     "【妖】赤葦京治",
@@ -248,7 +246,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.akaashi_ayakashi,
+    "/assets/FUKURODANI/akaashi_keiji_ayakashi.png",
   ),
   createPlayer(
     "【焼き芋】赤葦京治",
@@ -256,7 +254,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.akaashi_yakiimo,
+    "/assets/FUKURODANI/akaashi_keiji_yakiimo.png",
   ),
   createPlayer(
     "【Xmas3】赤葦京治",
@@ -264,7 +262,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.akaashi_xmas3,
+    "/assets/FUKURODANI/akaashi_keiji_xmas3.png",
   ),
   createPlayer(
     "【3周年】赤葦京治",
@@ -272,7 +270,7 @@ export const fukurodani: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.akaashi_3rd,
+    "/assets/FUKURODANI/akaashi_keiji_3rd.png",
   ),
   createPlayer(
     "【妖】赤葦京治",
@@ -280,6 +278,6 @@ export const fukurodani: PlayerData[] = [
     "S",
     "チョキ",
     "スーパーアイコニック",
-    Img.akaashi_ayakashi_supericonic,
+    "/assets/FUKURODANI/akaashi_keiji_ayakashi_supericonic.png",
   ),
 ];

@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const tokonami: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.komaki,
+    "/assets/TOKONAMI/komaki_hikaru.png",
   ),
   createPlayer(
     "駒木輝",
@@ -36,7 +34,7 @@ export const tokonami: PlayerData[] = [
     "WS",
     "グー",
     "スーパーアイコニック",
-    Img.komaki_supericonic,
+    "/assets/TOKONAMI/komaki_hikaru_supericonic.png",
   ),
 
   // 茶屋和馬
@@ -46,7 +44,7 @@ export const tokonami: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.chaya,
+    "/assets/TOKONAMI/chaya_kazuma.png",
   ),
 
   // 玉川弘樹
@@ -56,7 +54,7 @@ export const tokonami: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.tamagawa,
+    "/assets/TOKONAMI/tamagawa_hiroki.png",
   ),
 
   // 桜井大河
@@ -66,7 +64,7 @@ export const tokonami: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.sakurai,
+    "/assets/TOKONAMI/sakurai_taiga.png",
   ),
 
   // 芳賀良治
@@ -76,7 +74,7 @@ export const tokonami: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.haga,
+    "/assets/TOKONAMI/haga_yoshiaru.png",
   ),
 
   // 渋谷陸斗
@@ -86,7 +84,7 @@ export const tokonami: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.shibuya,
+    "/assets/TOKONAMI/shibuya_rikuto.png",
   ),
 
   // 池尻隼人
@@ -96,7 +94,7 @@ export const tokonami: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.ikejiri,
+    "/assets/TOKONAMI/ikejiri_hayato.png",
   ),
   createPlayer(
     "【文化祭2】池尻隼人",
@@ -104,7 +102,7 @@ export const tokonami: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ikejiri_culturefestival2,
+    "/assets/TOKONAMI/ikejiri_hayato_culturefestival2.png",
   ),
   createPlayer(
     "【遊園地】池尻隼人",
@@ -112,6 +110,6 @@ export const tokonami: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.ikejiri_amusementpark,
+    "/assets/TOKONAMI/ikejiri_hayato_amusementpark.png",
   ),
 ];

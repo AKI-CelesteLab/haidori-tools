@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.hinata,
+    "/assets/KARASUNO/hinata_shoyo.png",
   ),
   createPlayer(
     "【制服】日向翔陽",
@@ -36,7 +34,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.hinata_uniform,
+    "/assets/KARASUNO/hinata_shoyo_uniform.png",
   ),
   createPlayer(
     "【夏祭り】日向翔陽",
@@ -44,7 +42,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.hinata_summerfestival,
+    "/assets/KARASUNO/hinata_shoyo_summerfestival.png",
   ),
   createPlayer(
     "【1周年】日向翔陽",
@@ -52,7 +50,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.hinata_1st,
+    "/assets/KARASUNO/hinata_shoyo_1st.png",
   ),
   createPlayer(
     "【王冠】日向翔陽",
@@ -60,7 +58,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.hinata_crown,
+    "/assets/KARASUNO/hinata_shoyo_crown.png",
   ),
   createPlayer(
     "【ジャージ】日向翔陽",
@@ -68,7 +66,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.hinata_jersey,
+    "/assets/KARASUNO/hinata_shoyo_jersey.png",
   ),
   createPlayer(
     "【遊園地】日向翔陽",
@@ -76,7 +74,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.hinata_amusementpark,
+    "/assets/KARASUNO/hinata_shoyo_amusementpark.png",
   ),
   createPlayer(
     "【ハロウィン】日向翔陽",
@@ -84,7 +82,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.hinata_halloween,
+    "/assets/KARASUNO/hinata_shoyo_halloween.png",
   ),
   createPlayer(
     "【和装体験】日向翔陽",
@@ -92,7 +90,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.hinata_wasotaiken,
+    "/assets/KARASUNO/hinata_shoyo_wasotaiken.png",
   ),
   createPlayer(
     "【格ゲー】日向翔陽",
@@ -100,7 +98,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.hinata_fightinggame,
+    "/assets/KARASUNO/hinata_shoyo_fightinggame.png",
   ),
   createPlayer(
     "日向翔陽",
@@ -108,7 +106,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "スーパーアイコニック",
-    Img.hinata_supericonic,
+    "/assets/KARASUNO/hinata_shoyo_supericonic.png",
   ),
   createPlayer(
     "【王冠】日向翔陽",
@@ -116,7 +114,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "スーパーアイコニック",
-    Img.hinata_crown_supericonic,
+    "/assets/KARASUNO/hinata_shoyo_crown_supericonic.png",
   ),
 
   // 影山飛雄
@@ -126,7 +124,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kageyama,
+    "/assets/KARASUNO/kageyama_tobio.png",
   ),
   createPlayer(
     "【制服】影山飛雄",
@@ -134,7 +132,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kageyama_uniform,
+    "/assets/KARASUNO/kageyama_tobio_uniform.png",
   ),
   createPlayer(
     "【夏祭り】影山飛雄",
@@ -142,7 +140,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.kageyama_summerfestival,
+    "/assets/KARASUNO/kageyama_tobio_summerfestival.png",
   ),
   createPlayer(
     "【Xmas】影山飛雄",
@@ -150,7 +148,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.kageyama_xmas,
+    "/assets/KARASUNO/kageyama_tobio_xmas.png",
   ),
   createPlayer(
     "【1周年】影山飛雄",
@@ -158,7 +156,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kageyama_1st,
+    "/assets/KARASUNO/kageyama_tobio_1st.png",
   ),
   createPlayer(
     "【王冠】影山飛雄",
@@ -166,7 +164,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.kageyama_crown,
+    "/assets/KARASUNO/kageyama_tobio_crown.png",
   ),
   createPlayer(
     "【ジャージ】影山飛雄",
@@ -174,7 +172,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.kageyama_jersey,
+    "/assets/KARASUNO/kageyama_tobio_jersey.png",
   ),
   createPlayer(
     "【2周年】影山飛雄",
@@ -182,7 +180,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kageyama_2nd,
+    "/assets/KARASUNO/kageyama_tobio_2nd.png",
   ),
   createPlayer(
     "【中学生】影山飛雄",
@@ -190,7 +188,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.kageyama_middleschool,
+    "/assets/KARASUNO/kageyama_tobio_middleschool.png",
   ),
   createPlayer(
     "【文化祭3】影山飛雄",
@@ -198,7 +196,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.kageyama_culturefestival3,
+    "/assets/KARASUNO/kageyama_tobio_culturefestival3.png",
   ),
   createPlayer(
     "【格ゲー】影山飛雄",
@@ -206,7 +204,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kageyama_fightinggame,
+    "/assets/KARASUNO/kageyama_tobio_fightinggame.png",
   ),
   createPlayer(
     "【王冠】影山飛雄",
@@ -214,7 +212,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "グー",
     "スーパーアイコニック",
-    Img.kageyama_crown_supericonic,
+    "/assets/KARASUNO/kageyama_tobio_crown_supericonic.png",
   ),
 
   // 月島蛍
@@ -224,7 +222,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.tsukishima,
+    "/assets/KARASUNO/tsukishima_kei.png",
   ),
   createPlayer(
     "【水着】月島蛍",
@@ -232,7 +230,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.tsukishima_swimwear,
+    "/assets/KARASUNO/tsukishima_kei_swimwear.png",
   ),
   createPlayer(
     "【職業体験】月島蛍",
@@ -240,7 +238,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.tsukishima_jobshadowing,
+    "/assets/KARASUNO/tsukishima_kei_jobshadowing.png",
   ),
   createPlayer(
     "【1周年】月島蛍",
@@ -248,7 +246,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.tsukishima_1st,
+    "/assets/KARASUNO/tsukishima_kei_1st.png",
   ),
   createPlayer(
     "【花火】月島蛍",
@@ -256,7 +254,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.tsukishima_fireworks,
+    "/assets/KARASUNO/tsukishima_kei_fireworks.png",
   ),
   createPlayer(
     "【ジャージ】月島蛍",
@@ -264,7 +262,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.tsukishima_jersey,
+    "/assets/KARASUNO/tsukishima_kei_jersey.png",
   ),
   createPlayer(
     "【2周年】月島蛍",
@@ -272,7 +270,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.tsukishima_2nd,
+    "/assets/KARASUNO/tsukishima_kei_2nd.png",
   ),
   createPlayer(
     "【アート2】月島蛍",
@@ -280,7 +278,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.tsukishima_art2,
+    "/assets/KARASUNO/tsukishima_kei_art2.png",
   ),
   createPlayer(
     "【焼き芋】月島蛍",
@@ -288,7 +286,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.tsukishima_yakiimo,
+    "/assets/KARASUNO/tsukishima_kei_yakiimo.png",
   ),
   createPlayer(
     "【寝正月】月島蛍",
@@ -296,7 +294,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.tsukishima_lyinglow,
+    "/assets/KARASUNO/tsukishima_kei_lyinglow.png",
   ),
   createPlayer(
     "【思い出】月島蛍",
@@ -304,7 +302,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.tsukishima_memories,
+    "/assets/KARASUNO/tsukishima_kei_memories.png",
   ),
 
   // 山口忠
@@ -314,7 +312,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.yamaguchi,
+    "/assets/KARASUNO/yamaguchi_tadashi.png",
   ),
   createPlayer(
     "【水着】山口忠",
@@ -322,7 +320,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.yamaguchi_swimwear,
+    "/assets/KARASUNO/yamaguchi_tadashi_swimwear.png",
   ),
   createPlayer(
     "【雪遊び】山口忠",
@@ -330,7 +328,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.yamaguchi_playingsnow,
+    "/assets/KARASUNO/yamaguchi_tadashi_playingsnow.png",
   ),
   createPlayer(
     "【スパイ】山口忠",
@@ -338,7 +336,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.yamaguchi_spy,
+    "/assets/KARASUNO/yamaguchi_tadashi_spy.png",
   ),
   createPlayer(
     "【ジャージ】山口忠",
@@ -346,7 +344,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.yamaguchi_jersey,
+    "/assets/KARASUNO/yamaguchi_tadashi_jersey.png",
   ),
   createPlayer(
     "【焼き芋】山口忠",
@@ -354,7 +352,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.yamaguchi_yakiimo,
+    "/assets/KARASUNO/yamaguchi_tadashi_yakiimo.png",
   ),
   createPlayer(
     "【思い出】山口忠",
@@ -362,7 +360,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.yamaguchi_memories,
+    "/assets/KARASUNO/yamaguchi_tadashi_memories.png",
   ),
 
   // 西谷夕
@@ -372,7 +370,7 @@ export const karasuno: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.nishinoya,
+    "/assets/KARASUNO/nishinoya_yu.png",
   ),
   createPlayer(
     "【制服】西谷夕",
@@ -380,7 +378,7 @@ export const karasuno: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.nishinoya_uniform,
+    "/assets/KARASUNO/nishinoya_yu_uniform.png",
   ),
   createPlayer(
     "【Xmas】西谷夕",
@@ -388,7 +386,7 @@ export const karasuno: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.nishinoya_xmas,
+    "/assets/KARASUNO/nishinoya_yu_xmas.png",
   ),
   createPlayer(
     "【バーガー】西谷夕",
@@ -396,7 +394,7 @@ export const karasuno: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.nishinoya_burger,
+    "/assets/KARASUNO/nishinoya_yu_burger.png",
   ),
   createPlayer(
     "【文化祭2】西谷夕",
@@ -404,7 +402,7 @@ export const karasuno: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.nishinoya_culturefestival2,
+    "/assets/KARASUNO/nishinoya_yu_culturefestival2.png",
   ),
   createPlayer(
     "【2周年】西谷夕",
@@ -412,7 +410,7 @@ export const karasuno: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.nishinoya_2nd,
+    "/assets/KARASUNO/nishinoya_yu_2nd.png",
   ),
   createPlayer(
     "【ハロウィン】西谷夕",
@@ -420,7 +418,7 @@ export const karasuno: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.nishinoya_halloween,
+    "/assets/KARASUNO/nishinoya_yu_halloween.png",
   ),
 
   // 田中龍之介
@@ -430,7 +428,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.tanaka,
+    "/assets/KARASUNO/tanaka_ryunosuke.png",
   ),
   createPlayer(
     "【制服】田中龍之介",
@@ -438,7 +436,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.tanaka_uniform,
+    "/assets/KARASUNO/tanaka_ryunosuke_uniform.png",
   ),
   createPlayer(
     "【新年】田中龍之介",
@@ -446,7 +444,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.tanaka_newyear,
+    "/assets/KARASUNO/tanaka_ryunosuke_newyear.png",
   ),
   createPlayer(
     "【RPG】田中龍之介",
@@ -454,7 +452,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.tanaka_rpg,
+    "/assets/KARASUNO/tanaka_ryunosuke_rpg.png",
   ),
   createPlayer(
     "【仮装】田中龍之介",
@@ -462,7 +460,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.tanaka_costume,
+    "/assets/KARASUNO/tanaka_ryunosuke_costume.png",
   ),
   createPlayer(
     "【Xmas3】田中龍之介",
@@ -470,7 +468,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.tanaka_xmas3,
+    "/assets/KARASUNO/tanaka_ryunosuke_xmas3.png",
   ),
 
   // 澤村大地
@@ -480,7 +478,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.sawamura,
+    "/assets/KARASUNO/sawamura_daichi.png",
   ),
   createPlayer(
     "【プール掃除】澤村大地",
@@ -488,7 +486,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.sawamura_poolcleaning,
+    "/assets/KARASUNO/sawamura_daichi_poolcleaning.png",
   ),
   createPlayer(
     "【文化祭】澤村大地",
@@ -496,7 +494,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.sawamura_culturefestival,
+    "/assets/KARASUNO/sawamura_daichi_culturefestival.png",
   ),
   createPlayer(
     "【RPG】澤村大地",
@@ -504,7 +502,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.sawamura_rpg,
+    "/assets/KARASUNO/sawamura_daichi_rpg.png",
   ),
   createPlayer(
     "【新年2】澤村大地",
@@ -512,7 +510,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.sawamura_newyear2,
+    "/assets/KARASUNO/sawamura_daichi_newyear2.png",
   ),
   createPlayer(
     "【Xmas3】澤村大地",
@@ -520,7 +518,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.sawamura_xmas3,
+    "/assets/KARASUNO/sawamura_daichi_xmas3.png",
   ),
 
   // 菅原孝支
@@ -530,7 +528,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.sugawara,
+    "/assets/KARASUNO/sugawara_koushi.png",
   ),
   createPlayer(
     "【プール掃除】菅原孝支",
@@ -538,7 +536,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.sugawara_poolcleaning,
+    "/assets/KARASUNO/sugawara_koushi_poolcleaning.png",
   ),
   createPlayer(
     "【文化祭】菅原孝支",
@@ -546,7 +544,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.sugawara_culturefestival,
+    "/assets/KARASUNO/sugawara_koushi_culturefestival.png",
   ),
   createPlayer(
     "【梅雨】菅原孝支",
@@ -554,7 +552,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.sugawara_rainyseason,
+    "/assets/KARASUNO/sugawara_koushi_rainyseason.png",
   ),
   createPlayer(
     "【Xmas2】菅原孝支",
@@ -562,7 +560,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.sugawara_xmas2,
+    "/assets/KARASUNO/sugawara_koushi_xmas2.png",
   ),
   createPlayer(
     "【夏祭り2】菅原孝支",
@@ -570,7 +568,7 @@ export const karasuno: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.sugawara_summerfestival2,
+    "/assets/KARASUNO/sugawara_koushi_summerfestival2.png",
   ),
 
   // 東峰旭
@@ -580,7 +578,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.azumane,
+    "/assets/KARASUNO/azumane_asahi.png",
   ),
   createPlayer(
     "【プール掃除】東峰旭",
@@ -588,7 +586,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.azumane_poolcleaning,
+    "/assets/KARASUNO/azumane_asahi_poolcleaning.png",
   ),
   createPlayer(
     "【サバゲ】東峰旭",
@@ -596,7 +594,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.azumane_survivalgame,
+    "/assets/KARASUNO/azumane_asahi_survivalgame.png",
   ),
   createPlayer(
     "【夏祭り2】東峰旭",
@@ -604,7 +602,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.azumane_summerfestival2,
+    "/assets/KARASUNO/azumane_asahi_summerfestival2.png",
   ),
   createPlayer(
     "【和装体験】東峰旭",
@@ -612,7 +610,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.azumane_wasotaiken,
+    "/assets/KARASUNO/azumane_asahi_wasotaiken.png",
   ),
 
   // 縁下力
@@ -622,7 +620,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.ennoshita,
+    "/assets/KARASUNO/ennoshita_chikara.png",
   ),
   createPlayer(
     "【探偵】縁下力",
@@ -630,7 +628,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ennoshita_detective,
+    "/assets/KARASUNO/ennoshita_chikara_detective.png",
   ),
   createPlayer(
     "【RPG】縁下力",
@@ -638,7 +636,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.ennoshita_rpg,
+    "/assets/KARASUNO/ennoshita_chikara_rpg.png",
   ),
   createPlayer(
     "【花火】縁下力",
@@ -646,7 +644,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.ennoshita_fireworks,
+    "/assets/KARASUNO/ennoshita_chikara_fireworks.png",
   ),
 
   // 木下久志
@@ -656,7 +654,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.kinoshita,
+    "/assets/KARASUNO/kinoshita_hisashi.png",
   ),
   createPlayer(
     "【妖】木下久志",
@@ -664,7 +662,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kinoshita_ayakashi,
+    "/assets/KARASUNO/kinoshita_hisashi_ayakashi.png",
   ),
 
   // 成田一仁
@@ -674,7 +672,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.narita,
+    "/assets/KARASUNO/narita_kazuhito.png",
   ),
 
   // 清水潔子
@@ -684,7 +682,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.shimizu_fightinggame,
+    "/assets/KARASUNO/shimizu_kiyoko_fightinggame.png",
   ),
 
   // 谷地仁花
@@ -694,6 +692,6 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.yachi_fightinggame,
+    "/assets/KARASUNO/yachi_hitoka_fightinggame.png",
   ),
 ];

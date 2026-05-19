@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.aone,
+    "/assets/DATEKO/aone_takanobu.png",
   ),
   createPlayer(
     "【制服】青根高伸",
@@ -36,7 +34,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.aone_uniform,
+    "/assets/DATEKO/aone_takanobu_uniform.png",
   ),
   createPlayer(
     "【プール掃除】青根高伸",
@@ -44,7 +42,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.aone_poolcleaning,
+    "/assets/DATEKO/aone_takanobu_poolcleaning.png",
   ),
   createPlayer(
     "【キャンプ】青根高伸",
@@ -52,7 +50,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.aone_camp,
+    "/assets/DATEKO/aone_takanobu_camp.png",
   ),
   createPlayer(
     "【甲冑】青根高伸",
@@ -60,7 +58,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.aone_armor,
+    "/assets/DATEKO/aone_takanobu_armor.png",
   ),
   createPlayer(
     "【Xmas3】青根高伸",
@@ -68,7 +66,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.aone_xmas3,
+    "/assets/DATEKO/aone_takanobu_xmas3.png",
   ),
   createPlayer(
     "【甲冑】青根高伸",
@@ -76,7 +74,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "パー",
     "スーパーアイコニック",
-    Img.aone_armor_supericonic,
+    "/assets/DATEKO/aone_takanobu_armor_supericonic.png",
   ),
 
   // 二口堅治
@@ -86,7 +84,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.futakuchi,
+    "/assets/DATEKO/futakuchi_kenji.png",
   ),
   createPlayer(
     "【制服】二口堅治",
@@ -94,7 +92,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.futakuchi_uniform,
+    "/assets/DATEKO/futakuchi_kenji_uniform.png",
   ),
   createPlayer(
     "【プール掃除】二口堅治",
@@ -102,7 +100,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.futakuchi_poolcleaning,
+    "/assets/DATEKO/futakuchi_kenji_poolcleaning.png",
   ),
   createPlayer(
     "【路地裏】二口堅治",
@@ -110,7 +108,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.futakuchi_rojiura,
+    "/assets/DATEKO/futakuchi_kenji_rojiura.png",
   ),
   createPlayer(
     "【甲冑】二口堅治",
@@ -118,7 +116,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.futakuchi_armor,
+    "/assets/DATEKO/futakuchi_kenji_armor.png",
   ),
   createPlayer(
     "【2周年】二口堅治",
@@ -126,7 +124,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.futakuchi_2nd,
+    "/assets/DATEKO/futakuchi_kenji_2nd.png",
   ),
   createPlayer(
     "【アート2】二口堅治",
@@ -134,7 +132,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.futakuchi_art2,
+    "/assets/DATEKO/futakuchi_kenji_art2.png",
   ),
   createPlayer(
     "【Xmas3】二口堅治",
@@ -142,7 +140,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.futakuchi_xmas3,
+    "/assets/DATEKO/futakuchi_kenji_xmas3.png",
   ),
 
   // 黄金川貫至
@@ -152,7 +150,7 @@ export const dateko: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.koganegawa,
+    "/assets/DATEKO/koganegawa_kanji.png",
   ),
   createPlayer(
     "【制服】黄金川貫至",
@@ -160,7 +158,7 @@ export const dateko: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.koganegawa_uniform,
+    "/assets/DATEKO/koganegawa_kanji_uniform.png",
   ),
   createPlayer(
     "【職業体験】黄金川貫至",
@@ -168,7 +166,7 @@ export const dateko: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.koganegawa_jobshadowing,
+    "/assets/DATEKO/koganegawa_kanji_jobshadowing.png",
   ),
   createPlayer(
     "【スパイ】黄金川貫至",
@@ -176,7 +174,7 @@ export const dateko: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.koganegawa_spy,
+    "/assets/DATEKO/koganegawa_kanji_spy.png",
   ),
   createPlayer(
     "【焼き芋】黄金川貫至",
@@ -184,7 +182,7 @@ export const dateko: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.koganegawa_yakiimo,
+    "/assets/DATEKO/koganegawa_kanji_yakiimo.png",
   ),
   createPlayer(
     "【格ゲー】黄金川貫至",
@@ -192,7 +190,7 @@ export const dateko: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.koganegawa_fightinggame,
+    "/assets/DATEKO/koganegawa_kanji_fightinggame.png",
   ),
   createPlayer(
     "黄金川貫至",
@@ -200,7 +198,7 @@ export const dateko: PlayerData[] = [
     "S",
     "グー",
     "スーパーアイコニック",
-    Img.koganegawa_supericonic,
+    "/assets/DATEKO/koganegawa_kanji_supericonic.png",
   ),
 
   // 小原豊
@@ -210,7 +208,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.obara,
+    "/assets/DATEKO/obara_yutaka.png",
   ),
 
   // 女川太郎
@@ -220,7 +218,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.onagawa,
+    "/assets/DATEKO/onagawa_taro.png",
   ),
   createPlayer(
     "【水着2】女川太郎",
@@ -228,7 +226,7 @@ export const dateko: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.onagawa_swimwear2,
+    "/assets/DATEKO/onagawa_taro_swimwear2.png",
   ),
 
   // 作並浩輔
@@ -238,7 +236,7 @@ export const dateko: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.sakunami,
+    "/assets/DATEKO/sakunami_kosuke.png",
   ),
   createPlayer(
     "【職業体験2】作並浩輔",
@@ -246,7 +244,7 @@ export const dateko: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.sakunami_jobshadowing2,
+    "/assets/DATEKO/sakunami_kosuke_jobshadowing2.png",
   ),
 
   // 吹上仁悟
@@ -256,7 +254,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.fukiage,
+    "/assets/DATEKO/fukiage_jingo.png",
   ),
 
   // 茂庭要
@@ -266,7 +264,7 @@ export const dateko: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.moniwa,
+    "/assets/DATEKO/moniwa_kaname.png",
   ),
   createPlayer(
     "【寝正月】茂庭要",
@@ -274,7 +272,7 @@ export const dateko: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.moniwa_lyinglow,
+    "/assets/DATEKO/moniwa_kaname_lyinglow.png",
   ),
 
   // 鎌先靖志
@@ -284,7 +282,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.kamasaki,
+    "/assets/DATEKO/kamasaki_yasushi.png",
   ),
   createPlayer(
     "【甲冑】鎌先靖志",
@@ -292,7 +290,7 @@ export const dateko: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.kamasaki_armor,
+    "/assets/DATEKO/kamasaki_yasushi_armor.png",
   ),
 
   // 笹谷武仁
@@ -302,6 +300,6 @@ export const dateko: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.sasaya,
+    "/assets/DATEKO/sasaya_takehito.png",
   ),
 ];

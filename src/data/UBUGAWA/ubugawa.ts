@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const ubugawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.gora,
+    "/assets/UBUGAWA/gora_masaki.png",
   ),
 
   // 芦谷洋平
@@ -38,7 +36,7 @@ export const ubugawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ashiya,
+    "/assets/UBUGAWA/ashiya_yohei.png",
   ),
 
   // 仙石伸吾
@@ -48,7 +46,7 @@ export const ubugawa: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.sengoku,
+    "/assets/UBUGAWA/sengoku_shingo.png",
   ),
 
   // 中川俊美
@@ -58,7 +56,7 @@ export const ubugawa: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.nakagawa,
+    "/assets/UBUGAWA/nakagawa_toshimi.png",
   ),
 
   // 七沢健吾
@@ -68,7 +66,7 @@ export const ubugawa: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.nanasawa,
+    "/assets/UBUGAWA/nanasawa_kengo.png",
   ),
 
   // 伊勢原裕次
@@ -78,7 +76,7 @@ export const ubugawa: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.isehara,
+    "/assets/UBUGAWA/isehara_yuji.png",
   ),
 
   // 湯河浩二
@@ -88,6 +86,6 @@ export const ubugawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.yukawa,
+    "/assets/UBUGAWA/yukawa_koji.png",
   ),
 ];

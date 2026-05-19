@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const sarukawa: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.shiramine,
+    "/assets/SARUKAWA/shiramine_itaru.png",
   ),
 
   // 和倉久彦
@@ -38,7 +36,7 @@ export const sarukawa: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.wakura,
+    "/assets/SARUKAWA/wakura_hisahiko.png",
   ),
 
   // 金沢伊織
@@ -48,7 +46,7 @@ export const sarukawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kanazawa,
+    "/assets/SARUKAWA/kanazawa_iori.png",
   ),
 
   // 志賀智也
@@ -58,7 +56,7 @@ export const sarukawa: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.shiga,
+    "/assets/SARUKAWA/shiga_tomonari.png",
   ),
 
   // 輪島友和
@@ -68,7 +66,7 @@ export const sarukawa: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.wajima,
+    "/assets/SARUKAWA/wajima_tomokazu.png",
   ),
 
   // 深谷謙朗
@@ -78,7 +76,7 @@ export const sarukawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.fukatani,
+    "/assets/SARUKAWA/fukatani_kenro.png",
   ),
 
   // 山代総司
@@ -88,6 +86,6 @@ export const sarukawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.yamashiro,
+    "/assets/SARUKAWA/yamashiro_soji.png",
   ),
 ];

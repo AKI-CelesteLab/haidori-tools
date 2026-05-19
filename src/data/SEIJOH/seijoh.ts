@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.oikawa,
+    "/assets/SEIJOH/oikawa_tooru.png",
   ),
   createPlayer(
     "【プール掃除】及川徹",
@@ -36,7 +34,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.oikawa_poolcleaning,
+    "/assets/SEIJOH/oikawa_tooru_poolcleaning.png",
   ),
   createPlayer(
     "【Xmas】及川徹",
@@ -44,7 +42,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.oikawa_xmas,
+    "/assets/SEIJOH/oikawa_tooru_xmas.png",
   ),
   createPlayer(
     "【制服】及川徹",
@@ -52,7 +50,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.oikawa_uniform,
+    "/assets/SEIJOH/oikawa_tooru_uniform.png",
   ),
   createPlayer(
     "【路地裏】及川徹",
@@ -60,7 +58,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.oikawa_rojiura,
+    "/assets/SEIJOH/oikawa_tooru_rojiura.png",
   ),
   createPlayer(
     "【バカンス】及川徹",
@@ -68,7 +66,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.oikawa_vacation,
+    "/assets/SEIJOH/oikawa_tooru_vacation.png",
   ),
   createPlayer(
     "【2周年】及川徹",
@@ -76,7 +74,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.oikawa_2nd,
+    "/assets/SEIJOH/oikawa_tooru_2nd.png",
   ),
   createPlayer(
     "【夏祭り2】及川徹",
@@ -84,7 +82,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.oikawa_summerfestival2,
+    "/assets/SEIJOH/oikawa_tooru_summerfestival2.png",
   ),
   createPlayer(
     "【和装体験】及川徹",
@@ -92,7 +90,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.oikawa_wasotaiken,
+    "/assets/SEIJOH/oikawa_tooru_wasotaiken.png",
   ),
   createPlayer(
     "【格ゲー】及川徹",
@@ -100,7 +98,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.oikawa_fightinggame,
+    "/assets/SEIJOH/oikawa_tooru_fightinggame.png",
   ),
   createPlayer(
     "【Xmas】及川徹",
@@ -108,7 +106,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "チョキ",
     "スーパーアイコニック",
-    Img.oikawa_xmas_supericonic,
+    "/assets/SEIJOH/oikawa_tooru_xmas_supericonic.png",
   ),
 
   // 岩泉一
@@ -118,7 +116,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.iwaizumi,
+    "/assets/SEIJOH/iwaizumi_hajime.png",
   ),
   createPlayer(
     "【プール掃除】岩泉一",
@@ -126,7 +124,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.iwaizumi_poolcleaning,
+    "/assets/SEIJOH/iwaizumi_hajime_poolcleaning.png",
   ),
   createPlayer(
     "【制服】岩泉一",
@@ -134,7 +132,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.iwaizumi_uniform,
+    "/assets/SEIJOH/iwaizumi_hajime_uniform.png",
   ),
   createPlayer(
     "【サバゲ】岩泉一",
@@ -142,7 +140,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.iwaizumi_survivalgame,
+    "/assets/SEIJOH/iwaizumi_hajime_survivalgame.png",
   ),
   createPlayer(
     "【バカンス】岩泉一",
@@ -150,7 +148,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.iwaizumi_vacation,
+    "/assets/SEIJOH/iwaizumi_hajime_vacation.png",
   ),
   createPlayer(
     "【路地裏2】岩泉一",
@@ -158,7 +156,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.iwaizumi_rojiura2,
+    "/assets/SEIJOH/iwaizumi_hajime_rojiura2.png",
   ),
   createPlayer(
     "【夏祭り2】岩泉一",
@@ -166,7 +164,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.iwaizumi_summerfestival2,
+    "/assets/SEIJOH/iwaizumi_hajime_summerfestival2.png",
   ),
   createPlayer(
     "【Xmas3】岩泉一",
@@ -174,7 +172,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.iwaizumi_xmas3,
+    "/assets/SEIJOH/iwaizumi_hajime_xmas3.png",
   ),
 
   // 金田一勇太郎
@@ -184,7 +182,7 @@ export const seijoh: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.kindaichi,
+    "/assets/SEIJOH/kindaichi_yutaro.png",
   ),
   createPlayer(
     "【雪遊び】金田一勇太郎",
@@ -192,7 +190,7 @@ export const seijoh: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.kindaichi_playingsnow,
+    "/assets/SEIJOH/kindaichi_yutaro_playingsnow.png",
   ),
   createPlayer(
     "【カンフー】金田一勇太郎",
@@ -200,7 +198,7 @@ export const seijoh: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.kindaichi_kungfu,
+    "/assets/SEIJOH/kindaichi_yutaro_kungfu.png",
   ),
   createPlayer(
     "【中学生】金田一勇太郎",
@@ -208,7 +206,7 @@ export const seijoh: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.kindaichi_middleschool,
+    "/assets/SEIJOH/kindaichi_yutaro_middleschool.png",
   ),
 
   // 京谷賢太郎
@@ -218,7 +216,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kyotani,
+    "/assets/SEIJOH/kyotani_kentaro.png",
   ),
   createPlayer(
     "【梅雨】京谷賢太郎",
@@ -226,7 +224,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.kyotani_rainyseason,
+    "/assets/SEIJOH/kyotani_kentaro_rainyseason.png",
   ),
   createPlayer(
     "【水着2】京谷賢太郎",
@@ -234,7 +232,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.kyotani_swimwear2,
+    "/assets/SEIJOH/kyotani_kentaro_swimwear2.png",
   ),
   createPlayer(
     "京谷賢太郎",
@@ -242,7 +240,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "チョキ",
     "スーパーアイコニック",
-    Img.kyotani_supericonic,
+    "/assets/SEIJOH/kyotani_kentaro_supericonic.png",
   ),
 
   // 国見英
@@ -252,7 +250,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.kunimi,
+    "/assets/SEIJOH/kunimi_akira.png",
   ),
   createPlayer(
     "【職業体験】国見英",
@@ -260,7 +258,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.kunimi_jobshadowing,
+    "/assets/SEIJOH/kunimi_akira_jobshadowing.png",
   ),
   createPlayer(
     "【路地裏】国見英",
@@ -268,7 +266,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kunimi_rojiura,
+    "/assets/SEIJOH/kunimi_akira_rojiura.png",
   ),
   createPlayer(
     "【カンフー】国見英",
@@ -276,7 +274,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.kunimi_kungfu,
+    "/assets/SEIJOH/kunimi_akira_kungfu.png",
   ),
   createPlayer(
     "【中学生】国見英",
@@ -284,7 +282,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.kunimi_middleschool,
+    "/assets/SEIJOH/kunimi_akira_middleschool.png",
   ),
   createPlayer(
     "【寝正月】国見英",
@@ -292,7 +290,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kunimi_lyinglow,
+    "/assets/SEIJOH/kunimi_akira_lyinglow.png",
   ),
 
   // 渡親治
@@ -302,7 +300,7 @@ export const seijoh: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.watari,
+    "/assets/SEIJOH/watari_shinji.png",
   ),
 
   // 松川一静
@@ -312,7 +310,7 @@ export const seijoh: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.matsukawa,
+    "/assets/SEIJOH/matsukawa_issei.png",
   ),
   createPlayer(
     "【アート】松川一静",
@@ -320,7 +318,7 @@ export const seijoh: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.matsukawa_art,
+    "/assets/SEIJOH/matsukawa_issei_art.png",
   ),
   createPlayer(
     "【バカンス】松川一静",
@@ -328,7 +326,7 @@ export const seijoh: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.matsukawa_vacation,
+    "/assets/SEIJOH/matsukawa_issei_vacation.png",
   ),
   createPlayer(
     "【焼き芋】松川一静",
@@ -336,7 +334,7 @@ export const seijoh: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.matsukawa_yakiimo,
+    "/assets/SEIJOH/matsukawa_issei_yakiimo.png",
   ),
 
   // 花巻貴大
@@ -346,7 +344,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.hanamaki,
+    "/assets/SEIJOH/hanamaki_takahiro.png",
   ),
   createPlayer(
     "【アート】花巻貴大",
@@ -354,7 +352,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.hanamaki_art,
+    "/assets/SEIJOH/hanamaki_takahiro_art.png",
   ),
   createPlayer(
     "【バーガー】花巻貴大",
@@ -362,7 +360,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.hanamaki_burgur,
+    "/assets/SEIJOH/hanamaki_takahiro_burgur.png",
   ),
   createPlayer(
     "【妖】花巻貴大",
@@ -370,7 +368,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.hanamaki_ayakashi,
+    "/assets/SEIJOH/hanamaki_takahiro_ayakashi.png",
   ),
   createPlayer(
     "【焼き芋】花巻貴大",
@@ -378,7 +376,7 @@ export const seijoh: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.hanamaki_yakiimo,
+    "/assets/SEIJOH/hanamaki_takahiro_yakiimo.png",
   ),
 
   // 矢巾秀
@@ -388,7 +386,7 @@ export const seijoh: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.yahaba,
+    "/assets/SEIJOH/yahaba_shigeru.png",
   ),
   createPlayer(
     "【キャンプ】矢巾秀",
@@ -396,6 +394,6 @@ export const seijoh: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.yahaba_camp,
+    "/assets/SEIJOH/yahaba_shigeru_camp.png",
   ),
 ];

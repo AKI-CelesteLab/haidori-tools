@@ -38,6 +38,7 @@ export default function PlayerCard({
             src={player.image}
             alt={player.name}
             loading="lazy"
+            fill
             className="object-cover"
           />
         </div>

@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const shinzen: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.chigaya,
+    "/assets/SHINZEN/chigaya_eikichi.png",
   ),
 
   // 小鹿野大樹
@@ -38,7 +36,7 @@ export const shinzen: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.ogano,
+    "/assets/SHINZEN/ogano_daiki.png",
   ),
 
   // 赤谷勇
@@ -48,7 +46,7 @@ export const shinzen: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.akatani,
+    "/assets/SHINZEN/akatani_yu.png",
   ),
 
   // 児玉勝
@@ -58,7 +56,7 @@ export const shinzen: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kodama,
+    "/assets/SHINZEN/kodama_masaru.png",
   ),
 
   // 名栗翔太
@@ -68,7 +66,7 @@ export const shinzen: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.naguri,
+    "/assets/SHINZEN/naguri_shota.png",
   ),
 
   // 島府典明
@@ -78,7 +76,7 @@ export const shinzen: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.shimafu,
+    "/assets/SHINZEN/shimafu_noriaki.png",
   ),
 
   // 吉川和孝
@@ -88,6 +86,6 @@ export const shinzen: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.yoshikawa,
+    "/assets/SHINZEN/yoshikawa_kazutaka.png",
   ),
 ];

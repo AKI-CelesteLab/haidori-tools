@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const kamomedai: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.hoshiumi,
+    "/assets/KAMOMEDAI/hoshiumi_korai.png",
   ),
   createPlayer(
     "【文化祭】星海光来",
@@ -36,7 +34,7 @@ export const kamomedai: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.hoshiumi_culturefestival,
+    "/assets/KAMOMEDAI/hoshiumi_korai_culturefestival.png",
   ),
   createPlayer(
     "【サバゲ】星海光来",
@@ -44,7 +42,7 @@ export const kamomedai: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.hoshiumi_survivalgame,
+    "/assets/KAMOMEDAI/hoshiumi_korai_survivalgame.png",
   ),
   createPlayer(
     "【花火】星海光来",
@@ -52,7 +50,7 @@ export const kamomedai: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.hoshiumi_fireworks,
+    "/assets/KAMOMEDAI/hoshiumi_korai_fireworks.png",
   ),
   createPlayer(
     "【新年2】星海光来",
@@ -60,7 +58,7 @@ export const kamomedai: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.hoshiumi_newyear2,
+    "/assets/KAMOMEDAI/hoshiumi_korai_newyear2.png",
   ),
   createPlayer(
     "【格ゲー】星海光来",
@@ -68,7 +66,7 @@ export const kamomedai: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.hoshiumi_fightinggame,
+    "/assets/KAMOMEDAI/hoshiumi_korai_fightinggame.png",
   ),
 
   // 昼神幸郎
@@ -78,7 +76,7 @@ export const kamomedai: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.hirugami,
+    "/assets/KAMOMEDAI/hirugami_sachiro.png",
   ),
   createPlayer(
     "【Xmas】昼神幸郎",
@@ -86,7 +84,7 @@ export const kamomedai: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.hirugami_xmas,
+    "/assets/KAMOMEDAI/hirugami_sachiro_xmas.png",
   ),
   createPlayer(
     "【職業体験2】昼神幸郎",
@@ -94,7 +92,7 @@ export const kamomedai: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.hirugami_jobshadowing2,
+    "/assets/KAMOMEDAI/hirugami_sachiro_jobshadowing2.png",
   ),
   createPlayer(
     "【寝正月】昼神幸郎",
@@ -102,6 +100,6 @@ export const kamomedai: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.hirugami_lyinglow,
+    "/assets/KAMOMEDAI/hirugami_sachiro_lyinglow.png",
   ),
 ];

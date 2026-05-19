@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const itachiyama: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.sakusa,
+    "/assets/ITACHIYAMA/sakusa_kiyoomi.png",
   ),
   createPlayer(
     "【サバゲ】佐久早聖臣",
@@ -36,7 +34,7 @@ export const itachiyama: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.sakusa_survivalgame,
+    "/assets/ITACHIYAMA/sakusa_kiyoomi_survivalgame.png",
   ),
   createPlayer(
     "【新年2】佐久早聖臣",
@@ -44,7 +42,7 @@ export const itachiyama: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.sakusa_newyear2,
+    "/assets/ITACHIYAMA/sakusa_kiyoomi_newyear2.png",
   ),
   createPlayer(
     "【和装体験】佐久早聖臣",
@@ -52,7 +50,7 @@ export const itachiyama: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.sakusa_wasotaiken,
+    "/assets/ITACHIYAMA/sakusa_kiyoomi_wasotaiken.png",
   ),
 
   // 古森元也
@@ -62,7 +60,7 @@ export const itachiyama: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.komori,
+    "/assets/ITACHIYAMA/komori_motoya.png",
   ),
   createPlayer(
     "【キャンプ】古森元也",
@@ -70,7 +68,7 @@ export const itachiyama: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.komori_camp,
+    "/assets/ITACHIYAMA/komori_motoya_camp.png",
   ),
   createPlayer(
     "【ハロウィン】古森元也",
@@ -78,6 +76,6 @@ export const itachiyama: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.komori_halloween,
+    "/assets/ITACHIYAMA/komori_motoya_halloween.png",
   ),
 ];

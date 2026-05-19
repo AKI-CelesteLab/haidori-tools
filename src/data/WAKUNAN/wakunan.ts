@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const wakunan: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.nakashima,
+    "/assets/WAKUNAN/nakashima_takeru.png",
   ),
   createPlayer(
     "【スパイ】中島猛",
@@ -36,7 +34,7 @@ export const wakunan: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.nakashima_spy,
+    "/assets/WAKUNAN/nakashima_takeru_spy.png",
   ),
 
   // 白石優希
@@ -46,7 +44,7 @@ export const wakunan: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.shiroishi,
+    "/assets/WAKUNAN/shiroishi_yuki.png",
   ),
 
   // 花山一雅
@@ -56,7 +54,7 @@ export const wakunan: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.hanayama,
+    "/assets/WAKUNAN/hanayama_kazumasa.png",
   ),
 
   // 鳴子哲平
@@ -66,7 +64,7 @@ export const wakunan: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.naruko,
+    "/assets/WAKUNAN/naruko_teppei.png",
   ),
 
   // 秋保和光
@@ -76,7 +74,7 @@ export const wakunan: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.akiu,
+    "/assets/WAKUNAN/akiu_kazuteru.png",
   ),
 
   // 松島剛
@@ -86,7 +84,7 @@ export const wakunan: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.matsushima,
+    "/assets/WAKUNAN/matsushima_tsuyoshi.png",
   ),
   createPlayer(
     "【妖】松島剛",
@@ -94,7 +92,7 @@ export const wakunan: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.matsushima_ayakashi,
+    "/assets/WAKUNAN/matsushima_tsuyoshi_ayakashi.png",
   ),
 
   // 川渡瞬己
@@ -104,7 +102,7 @@ export const wakunan: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kawatabi,
+    "/assets/WAKUNAN/kawatabi_shunki.png",
   ),
   createPlayer(
     "【サバゲ2】川渡瞬己",
@@ -112,6 +110,6 @@ export const wakunan: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kawatabi_survivalgame2,
+    "/assets/WAKUNAN/kawatabi_shunki_survivalgame2.png",
   ),
 ];

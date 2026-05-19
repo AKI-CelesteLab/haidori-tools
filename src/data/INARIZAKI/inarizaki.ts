@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const inarizaki: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.atsumu,
+    "/assets/INARIZAKI/miya_atsumu.png",
   ),
   createPlayer(
     "【文化祭】宮侑",
@@ -36,7 +34,7 @@ export const inarizaki: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.atsumu_culturefestival,
+    "/assets/INARIZAKI/miya_atsumu_culturefestival.png",
   ),
   createPlayer(
     "【RPG】宮侑",
@@ -44,7 +42,7 @@ export const inarizaki: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.atsumu_rpg,
+    "/assets/INARIZAKI/miya_atsumu_rpg.png",
   ),
   createPlayer(
     "【カンフー】宮侑",
@@ -52,7 +50,7 @@ export const inarizaki: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.atsumu_kungfu,
+    "/assets/INARIZAKI/miya_atsumu_kungfu.png",
   ),
   createPlayer(
     "【新年2】宮侑",
@@ -60,7 +58,7 @@ export const inarizaki: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.atsumu_newyear2,
+    "/assets/INARIZAKI/miya_atsumu_newyear2.png",
   ),
   createPlayer(
     "【サバゲ2】宮侑",
@@ -68,7 +66,7 @@ export const inarizaki: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.atsumu_survivalgame2,
+    "/assets/INARIZAKI/miya_atsumu_survivalgame2.png",
   ),
   createPlayer(
     "【制服】宮侑",
@@ -76,7 +74,7 @@ export const inarizaki: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.atsumu_uniform,
+    "/assets/INARIZAKI/miya_atsumu_uniform.png",
   ),
   createPlayer(
     "【3周年】宮侑",
@@ -84,7 +82,7 @@ export const inarizaki: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.atsumu_3rd,
+    "/assets/INARIZAKI/miya_atsumu_3rd.png",
   ),
   createPlayer(
     "【RPG】宮侑",
@@ -92,18 +90,18 @@ export const inarizaki: PlayerData[] = [
     "S",
     "パー",
     "スーパーアイコニック",
-    Img.atsumu_rpg_supericonic,
+    "/assets/INARIZAKI/miya_atsumu_rpg_supericonic.png",
   ),
 
   // 宮治
-  createPlayer("宮治", "ユニフォーム", "WS", "パー", "アイコニック", Img.osamu),
+  createPlayer("宮治", "ユニフォーム", "WS", "パー", "アイコニック", "/assets/INARIZAKI/miya_osamu.png"),
   createPlayer(
     "【RPG】宮治",
     "RPG",
     "WS",
     "チョキ",
     "アイコニック",
-    Img.osamu_rpg,
+    "/assets/INARIZAKI/miya_osamu_rpg.png",
   ),
   createPlayer(
     "【カンフー】宮治",
@@ -111,7 +109,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.osamu_kungfu,
+    "/assets/INARIZAKI/miya_osamu_kungfu.png",
   ),
   createPlayer(
     "【遊園地】宮治",
@@ -119,7 +117,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.osamu_amusementpark,
+    "/assets/INARIZAKI/miya_osamu_amusementpark.png",
   ),
   createPlayer(
     "【夏祭り2】宮治",
@@ -127,7 +125,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.osamu_summerfestival2,
+    "/assets/INARIZAKI/miya_osamu_summerfestival2.png",
   ),
   createPlayer(
     "【制服】宮治",
@@ -135,7 +133,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.osamu_uniform,
+    "/assets/INARIZAKI/miya_osamu_uniform.png",
   ),
   createPlayer(
     "【3周年】宮治",
@@ -143,7 +141,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.osamu_3rd,
+    "/assets/INARIZAKI/miya_osamu_3rd.png",
   ),
   createPlayer(
     "【RPG】宮治",
@@ -151,7 +149,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "スーパーアイコニック",
-    Img.osamu_rpg_supericonic,
+    "/assets/INARIZAKI/miya_osamu_rpg_supericonic.png",
   ),
 
   // 角名倫太郎
@@ -161,7 +159,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.suna,
+    "/assets/INARIZAKI/suna_rintaro.png",
   ),
   createPlayer(
     "【サバゲ】角名倫太郎",
@@ -169,7 +167,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.suna_survivalgame,
+    "/assets/INARIZAKI/suna_rintaro_survivalgame.png",
   ),
   createPlayer(
     "【花火】角名倫太郎",
@@ -177,7 +175,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.suna_fireworks,
+    "/assets/INARIZAKI/suna_rintaro_fireworks.png",
   ),
   createPlayer(
     "【路地裏2】角名倫太郎",
@@ -185,7 +183,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.suna_rojiura2,
+    "/assets/INARIZAKI/suna_rintaro_rojiura2.png",
   ),
   createPlayer(
     "【水着2】角名倫太郎",
@@ -193,7 +191,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.suna_swimwear2,
+    "/assets/INARIZAKI/suna_rintaro_swimwear2.png",
   ),
   createPlayer(
     "【制服】角名倫太郎",
@@ -201,7 +199,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.suna_uniform,
+    "/assets/INARIZAKI/suna_rintaro_uniform.png",
   ),
   createPlayer(
     "【寝正月】角名倫太郎",
@@ -209,7 +207,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.suna_lyinglow,
+    "/assets/INARIZAKI/suna_rintaro_lyinglow.png",
   ),
   createPlayer(
     "【3周年】角名倫太郎",
@@ -217,7 +215,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.suna_3rd,
+    "/assets/INARIZAKI/suna_rintaro_3rd.png",
   ),
 
   // 北信介
@@ -227,7 +225,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kita,
+    "/assets/INARIZAKI/kita_shinsuke.png",
   ),
   createPlayer(
     "【Xmas】北信介",
@@ -235,7 +233,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.kita_xmas,
+    "/assets/INARIZAKI/kita_shinsuke_xmas.png",
   ),
   createPlayer(
     "【スパイ】北信介",
@@ -243,7 +241,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.kita_spy,
+    "/assets/INARIZAKI/kita_shinsuke_spy.png",
   ),
   createPlayer(
     "【新年2】北信介",
@@ -251,7 +249,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kita_newyear2,
+    "/assets/INARIZAKI/kita_shinsuke_newyear2.png",
   ),
   createPlayer(
     "【職業体験2】北信介",
@@ -259,7 +257,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.kita_jobshadowing2,
+    "/assets/INARIZAKI/kita_shinsuke_jobshadowing2.png",
   ),
   createPlayer(
     "【制服】北信介",
@@ -267,7 +265,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.kita_uniform,
+    "/assets/INARIZAKI/kita_shinsuke_uniform.png",
   ),
   createPlayer(
     "【和装体験】北信介",
@@ -275,7 +273,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kita_wasotaiken,
+    "/assets/INARIZAKI/kita_shinsuke_wasotaiken.png",
   ),
   createPlayer(
     "【思い出】北信介",
@@ -283,7 +281,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.kita_memories,
+    "/assets/INARIZAKI/kita_shinsuke_memories.png",
   ),
 
   // 尾白アラン
@@ -293,7 +291,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ojiro,
+    "/assets/INARIZAKI/ojiro_aran.png",
   ),
   createPlayer(
     "【雪遊び】尾白アラン",
@@ -301,7 +299,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ojiro_playingsnow,
+    "/assets/INARIZAKI/ojiro_aran_playingsnow.png",
   ),
   createPlayer(
     "【夏祭り2】尾白アラン",
@@ -309,7 +307,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.ojiro_summerfestival2,
+    "/assets/INARIZAKI/ojiro_aran_summerfestival2.png",
   ),
 
   // 赤木路成
@@ -319,7 +317,7 @@ export const inarizaki: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.akagi,
+    "/assets/INARIZAKI/akagi_michinari.png",
   ),
   createPlayer(
     "【Xmas2】赤木路成",
@@ -327,7 +325,7 @@ export const inarizaki: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.akagi_xmas2,
+    "/assets/INARIZAKI/akagi_michinari_xmas2.png",
   ),
 
   // 大耳練
@@ -337,7 +335,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.oomimi,
+    "/assets/INARIZAKI/oomimi_ren.png",
   ),
   createPlayer(
     "【和装体験】大耳練",
@@ -345,7 +343,7 @@ export const inarizaki: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.oomimi_wasotaiken,
+    "/assets/INARIZAKI/oomimi_ren_wasotaiken.png",
   ),
 
   // 理石平介
@@ -355,7 +353,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.riseki,
+    "/assets/INARIZAKI/riseki_heisuke.png",
   ),
 
   // 銀島結
@@ -365,7 +363,7 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ginjima,
+    "/assets/INARIZAKI/ginjima_hitoshi.png",
   ),
   createPlayer(
     "【Xmas2】銀島結",
@@ -373,6 +371,6 @@ export const inarizaki: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.ginjima_xmas2,
+    "/assets/INARIZAKI/ginjima_hitoshi_xmas2.png",
   ),
 ];

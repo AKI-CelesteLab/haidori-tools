@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const jozenji: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.terushima,
+    "/assets/JOZENJI/terushima_yuji.png",
   ),
   createPlayer(
     "【制服】照島遊児",
@@ -36,7 +34,7 @@ export const jozenji: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.terushima_uniform,
+    "/assets/JOZENJI/terushima_yuji_uniform.png",
   ),
   createPlayer(
     "【雪遊び】照島遊児",
@@ -44,7 +42,7 @@ export const jozenji: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.terushima_playingsnow,
+    "/assets/JOZENJI/terushima_yuji_playingsnow.png",
   ),
   createPlayer(
     "【スパイ】照島遊児",
@@ -52,7 +50,7 @@ export const jozenji: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.terushima_spy,
+    "/assets/JOZENJI/terushima_yuji_spy.png",
   ),
   createPlayer(
     "【妖】照島遊児",
@@ -60,7 +58,7 @@ export const jozenji: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.terushima_ayakashi,
+    "/assets/JOZENJI/terushima_yuji_ayakashi.png",
   ),
   createPlayer(
     "【格ゲー】照島遊児",
@@ -68,7 +66,7 @@ export const jozenji: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.terushima_fightinggame,
+    "/assets/JOZENJI/terushima_yuji_fightinggame.png",
   ),
 
   // 母畑和馬
@@ -78,7 +76,7 @@ export const jozenji: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.bobata,
+    "/assets/JOZENJI/bobata_kazuma.png",
   ),
   createPlayer(
     "【アート2】母畑和馬",
@@ -86,7 +84,7 @@ export const jozenji: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.bobata_art2,
+    "/assets/JOZENJI/bobata_kazuma_art2.png",
   ),
   createPlayer(
     "【アート2】母畑和馬",
@@ -94,7 +92,7 @@ export const jozenji: PlayerData[] = [
     "MB",
     "パー",
     "スーパーアイコニック",
-    Img.bobata_art2_supericonic,
+    "/assets/JOZENJI/bobata_kazuma_art2_supericonic.png",
   ),
 
   // 二岐丈春
@@ -104,7 +102,7 @@ export const jozenji: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.futamata,
+    "/assets/JOZENJI/futamata_takeharu.png",
   ),
   createPlayer(
     "【制服】二岐丈春",
@@ -112,7 +110,7 @@ export const jozenji: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.futamata_uniform,
+    "/assets/JOZENJI/futamata_takeharu_uniform.png",
   ),
 
   // 沼尻凛太郎
@@ -122,7 +120,7 @@ export const jozenji: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.numajiri,
+    "/assets/JOZENJI/numajiri_rintaro.png",
   ),
 
   // 飯坂信義
@@ -132,7 +130,7 @@ export const jozenji: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.iizaka,
+    "/assets/JOZENJI/iizaka_nobuyoshi.png",
   ),
 
   // 東山勝道
@@ -142,7 +140,7 @@ export const jozenji: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.higashiyama,
+    "/assets/JOZENJI/higashiyama_katsumichi.png",
   ),
 
   // 土湯新
@@ -152,6 +150,6 @@ export const jozenji: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.tsuchiyu,
+    "/assets/JOZENJI/tsuchiyu_arata.png",
   ),
 ];

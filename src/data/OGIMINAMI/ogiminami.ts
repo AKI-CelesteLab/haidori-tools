@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const ogiminami: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.towada,
+    "/assets/OGIMINAMI/towada_yoshiki.png",
   ),
   createPlayer(
     "十和田良樹",
@@ -36,7 +34,7 @@ export const ogiminami: PlayerData[] = [
     "WS",
     "チョキ",
     "スーパーアイコニック",
-    Img.towada_supericonic,
+    "/assets/OGIMINAMI/towada_yoshiki_supericonic.png",
   ),
 
   // 森岳歩
@@ -46,7 +44,7 @@ export const ogiminami: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.moritake,
+    "/assets/OGIMINAMI/moritake_ayumu.png",
   ),
 
   // 唐松拓巳
@@ -56,7 +54,7 @@ export const ogiminami: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.karamatsu,
+    "/assets/OGIMINAMI/karamatsu_takumi.png",
   ),
 
   // 田沢裕樹
@@ -66,7 +64,7 @@ export const ogiminami: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.tazawa,
+    "/assets/OGIMINAMI/tazawa_yuki.png",
   ),
 
   // 小安颯真
@@ -76,7 +74,7 @@ export const ogiminami: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.oyasu,
+    "/assets/OGIMINAMI/oyasu_soma.png",
   ),
   createPlayer(
     "【サバゲ2】小安颯真",
@@ -84,7 +82,7 @@ export const ogiminami: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.oyasu_survivalgame2,
+    "/assets/OGIMINAMI/oyasu_soma_survivalgame2.png",
   ),
 
   // 横手駿
@@ -94,7 +92,7 @@ export const ogiminami: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.yokote,
+    "/assets/OGIMINAMI/yokote_shun.png",
   ),
 
   // 夏瀬伊吹
@@ -104,7 +102,7 @@ export const ogiminami: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.natsuse,
+    "/assets/OGIMINAMI/natsuse_ibuki.png",
   ),
 
   // 秋宮昇
@@ -114,6 +112,6 @@ export const ogiminami: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.akimiya,
+    "/assets/OGIMINAMI/akimiya_noboru.png",
   ),
 ];

@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.ushijima,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi.png",
   ),
   createPlayer(
     "【水着】牛島若利",
@@ -36,7 +34,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.ushijima_swimwear,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_swimwear.png",
   ),
   createPlayer(
     "【新年】牛島若利",
@@ -44,7 +42,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ushijima_newyear,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_newyear.png",
   ),
   createPlayer(
     "【制服】牛島若利",
@@ -52,7 +50,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.ushijima_uniform,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_uniform.png",
   ),
   createPlayer(
     "【文化祭2】牛島若利",
@@ -60,7 +58,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.ushijima_culturefestival2,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_culturefestival2.png",
   ),
   createPlayer(
     "【妖】牛島若利",
@@ -68,7 +66,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ushijima_ayakashi,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_ayakashi.png",
   ),
   createPlayer(
     "【ハロウィン】牛島若利",
@@ -76,7 +74,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.ushijima_halloween,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_halloween.png",
   ),
   createPlayer(
     "【Xmas3】牛島若利",
@@ -84,7 +82,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.ushijima_xmas3,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_xmas3.png",
   ),
   createPlayer(
     "【3周年】牛島若利",
@@ -92,7 +90,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.ushijima_3rd,
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_3rd.png",
   ),
 
   // 天童覚
@@ -102,7 +100,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.tendo,
+    "/assets/SHIRATORIZAWA/tendo_satori.png",
   ),
   createPlayer(
     "【】天童覚",
@@ -110,7 +108,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.tendo_swimwear,
+    "/assets/SHIRATORIZAWA/tendo_satori_swimwear.png",
   ),
   createPlayer(
     "【文化祭】天童覚",
@@ -118,7 +116,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.tendo_culturefestival,
+    "/assets/SHIRATORIZAWA/tendo_satori_culturefestival.png",
   ),
   createPlayer(
     "【制服】天童覚",
@@ -126,7 +124,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.tendo_uniform,
+    "/assets/SHIRATORIZAWA/tendo_satori_uniform.png",
   ),
   createPlayer(
     "【仮装】天童覚",
@@ -134,7 +132,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.tendo_costume,
+    "/assets/SHIRATORIZAWA/tendo_satori_costume.png",
   ),
   createPlayer(
     "【遊園地】天童覚",
@@ -142,7 +140,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.tendo_amusementpark,
+    "/assets/SHIRATORIZAWA/tendo_satori_amusementpark.png",
   ),
   createPlayer(
     "【Xmas3】天童覚",
@@ -150,7 +148,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.tendo_xmas3,
+    "/assets/SHIRATORIZAWA/tendo_satori_xmas3.png",
   ),
   createPlayer(
     "【文化祭】天童覚",
@@ -158,7 +156,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "グー",
     "スーパーアイコニック",
-    Img.tendo_culturefestival_supericonic,
+    "/assets/SHIRATORIZAWA/tendo_satori_culturefestival_supericonic.png",
   ),
 
   // 五色工
@@ -168,7 +166,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.goshiki,
+    "/assets/SHIRATORIZAWA/goshiki_tsutomu.png",
   ),
   createPlayer(
     "【職業体験】五色工",
@@ -176,7 +174,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.goshiki_jobshadowing,
+    "/assets/SHIRATORIZAWA/goshiki_tsutomu_jobshadowing.png",
   ),
   createPlayer(
     "【制服】五色工",
@@ -184,7 +182,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.goshiki_uniform,
+    "/assets/SHIRATORIZAWA/goshiki_tsutomu_uniform.png",
   ),
   createPlayer(
     "【バカンス】五色工",
@@ -192,7 +190,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.goshiki_vacation,
+    "/assets/SHIRATORIZAWA/goshiki_tsutomu_vacation.png",
   ),
   createPlayer(
     "【Xmas2】五色工",
@@ -200,7 +198,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.goshiki_xmas2,
+    "/assets/SHIRATORIZAWA/goshiki_tsutomu_xmas2.png",
   ),
   createPlayer(
     "【サバゲ2】五色工",
@@ -208,7 +206,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.goshiki_survivalgame2,
+    "/assets/SHIRATORIZAWA/goshiki_tsutomu_survivalgame2.png",
   ),
 
   // 白布賢二郎
@@ -218,7 +216,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.shirabu,
+    "/assets/SHIRATORIZAWA/shirabu_kenjiro.png",
   ),
   createPlayer(
     "【探偵】白布賢二郎",
@@ -226,7 +224,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.shirabu_detective,
+    "/assets/SHIRATORIZAWA/shirabu_kenjiro_detective.png",
   ),
   createPlayer(
     "【制服】白布賢二郎",
@@ -234,7 +232,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.shirabu_uniform,
+    "/assets/SHIRATORIZAWA/shirabu_kenjiro_uniform.png",
   ),
   createPlayer(
     "【バカンス】白布賢二郎",
@@ -242,7 +240,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.shirabu_vacation,
+    "/assets/SHIRATORIZAWA/shirabu_kenjiro_vacation.png",
   ),
   createPlayer(
     "【路地裏2】白布賢二郎",
@@ -250,7 +248,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.shirabu_rojiura2,
+    "/assets/SHIRATORIZAWA/shirabu_kenjiro_rojiura2.png",
   ),
   createPlayer(
     "【文化祭3】白布賢二郎",
@@ -258,7 +256,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.shirabu_culturefestival3,
+    "/assets/SHIRATORIZAWA/shirabu_kenjiro_culturefestival3.png",
   ),
   createPlayer(
     "【3周年】白布賢二郎",
@@ -266,7 +264,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.shirabu_3rd,
+    "/assets/SHIRATORIZAWA/shirabu_kenjiro_3rd.png",
   ),
 
   // 大平獅音
@@ -276,7 +274,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.oohira,
+    "/assets/SHIRATORIZAWA/oohira_reon.png",
   ),
   createPlayer(
     "【格ゲー】大平獅音",
@@ -284,7 +282,7 @@ export const shiratorizawa: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.oohira_fightinggame,
+    "/assets/SHIRATORIZAWA/oohira_reon_fightinggame.png",
   ),
 
   // 川西太一
@@ -294,7 +292,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.kawanishi,
+    "/assets/SHIRATORIZAWA/kawanishi_taichi.png",
   ),
   createPlayer(
     "【路地裏】川西太一",
@@ -302,7 +300,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.kawanishi_rojiura,
+    "/assets/SHIRATORIZAWA/kawanishi_taichi_rojiura.png",
   ),
   createPlayer(
     "【寝正月】川西太一",
@@ -310,7 +308,7 @@ export const shiratorizawa: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.kawanishi_lyinglow,
+    "/assets/SHIRATORIZAWA/kawanishi_taichi_lyinglow.png",
   ),
 
   // 瀬見英太
@@ -320,7 +318,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.semi,
+    "/assets/SHIRATORIZAWA/semi_eita.png",
   ),
   createPlayer(
     "【雪遊び】瀬見英太",
@@ -328,7 +326,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.semi_playingsnow,
+    "/assets/SHIRATORIZAWA/semi_eita_playingsnow.png",
   ),
   createPlayer(
     "【バカンス】瀬見英太",
@@ -336,7 +334,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.semi_vacation,
+    "/assets/SHIRATORIZAWA/semi_eita_vacation.png",
   ),
   createPlayer(
     "【アート2】瀬見英太",
@@ -344,7 +342,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.semi_art2,
+    "/assets/SHIRATORIZAWA/semi_eita_art2.png",
   ),
   createPlayer(
     "【文化祭3】瀬見英太",
@@ -352,7 +350,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.semi_culturefestival3,
+    "/assets/SHIRATORIZAWA/semi_eita_culturefestival3.png",
   ),
   createPlayer(
     "【3周年】瀬見英太",
@@ -360,7 +358,7 @@ export const shiratorizawa: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.semi_3rd,
+    "/assets/SHIRATORIZAWA/semi_eita_3rd.png",
   ),
 
   // 山形隼人
@@ -370,6 +368,6 @@ export const shiratorizawa: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.yamagata,
+    "/assets/SHIRATORIZAWA/yamagata_hayato.png",
   ),
 ];

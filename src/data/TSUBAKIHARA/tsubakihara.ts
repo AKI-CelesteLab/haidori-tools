@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const tsubakihara: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.himekawa,
+    "/assets/TSUBAKIHARA/himekawa_aoi.png",
   ),
   createPlayer(
     "【花火】姫川葵",
@@ -36,7 +34,7 @@ export const tsubakihara: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.himekawa_fireworks,
+    "/assets/TSUBAKIHARA/himekawa_aoi_fireworks.png",
   ),
 
   // 当間義友
@@ -46,7 +44,7 @@ export const tsubakihara: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.atema,
+    "/assets/TSUBAKIHARA/atema_yoshitomo.png",
   ),
 
   // 越後栄
@@ -56,7 +54,7 @@ export const tsubakihara: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.echigo,
+    "/assets/TSUBAKIHARA/echigo_sakae.png",
   ),
 
   // 貝掛亮文
@@ -66,7 +64,7 @@ export const tsubakihara: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.kaikake,
+    "/assets/TSUBAKIHARA/kaikake_akifumi.png",
   ),
 
   // 丸山一喜
@@ -76,7 +74,7 @@ export const tsubakihara: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.maruyama,
+    "/assets/TSUBAKIHARA/maruyama_kazuki.png",
   ),
 
   // 舞子侑志
@@ -86,7 +84,7 @@ export const tsubakihara: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.maiko,
+    "/assets/TSUBAKIHARA/maiko_yushi.png",
   ),
 
   // 寺泊基希
@@ -96,7 +94,7 @@ export const tsubakihara: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.teradomari,
+    "/assets/TSUBAKIHARA/teradomari_motoki.png",
   ),
 
   // 岩室橙吾
@@ -106,6 +104,6 @@ export const tsubakihara: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.iwamuro,
+    "/assets/TSUBAKIHARA/iwamuro_togo.png",
   ),
 ];

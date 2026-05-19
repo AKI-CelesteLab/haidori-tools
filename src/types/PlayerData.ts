@@ -1,5 +1,3 @@
-import {StaticImageData} from "next/image";
-
 export const categoryList = [
   "ユニフォーム",
   "制服", // uniform
@@ -101,5 +99,5 @@ export type PlayerData = {
   position: Position;
   type: Type;
   class: Class;
-  image: StaticImageData;
+  image: string;
 };

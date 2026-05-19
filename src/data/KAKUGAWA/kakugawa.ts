@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const kakugawa: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.komaki,
+    "/assets/KAKUGAWA/komaki_yuzuru.png",
   ),
   createPlayer(
     "【雪遊び】古牧譲",
@@ -36,7 +34,7 @@ export const kakugawa: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.komaki_playingsnow,
+    "/assets/KAKUGAWA/komaki_yuzuru_playingsnow.png",
   ),
 
   // 浅虫快人
@@ -46,7 +44,7 @@ export const kakugawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.asamushi,
+    "/assets/KAKUGAWA/asamushi_kaito.png",
   ),
 
   // 南田大志
@@ -56,7 +54,7 @@ export const kakugawa: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.minamida,
+    "/assets/KAKUGAWA/minamida_taishi.png",
   ),
 
   // 温川良明
@@ -66,7 +64,7 @@ export const kakugawa: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.nurukawa,
+    "/assets/KAKUGAWA/nurukawa_yoshiaki.png",
   ),
 
   // 稲垣功
@@ -76,7 +74,7 @@ export const kakugawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.inagaki,
+    "/assets/KAKUGAWA/inagaki_isao.png",
   ),
 
   // 馬門英治
@@ -86,7 +84,7 @@ export const kakugawa: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.makado,
+    "/assets/KAKUGAWA/makado_eiji.png",
   ),
 
   // 百沢雄大
@@ -96,7 +94,7 @@ export const kakugawa: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.hyakuzawa,
+    "/assets/KAKUGAWA/hyakuzawa_yudai.png",
   ),
   createPlayer(
     "【職業体験】百沢雄大",
@@ -104,7 +102,7 @@ export const kakugawa: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.hyakuzawa_jobshadowing,
+    "/assets/KAKUGAWA/hyakuzawa_yudai_jobshadowing.png",
   ),
   createPlayer(
     "百沢雄大",
@@ -112,6 +110,6 @@ export const kakugawa: PlayerData[] = [
     "WS",
     "グー",
     "スーパーアイコニック",
-    Img.hyakuzawa_supericonic,
+    "/assets/KAKUGAWA/hyakuzawa_yudai_supericonic.png",
   ),
 ];

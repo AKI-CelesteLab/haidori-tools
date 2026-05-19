@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.kozume,
+    "/assets/NEKOMA/kozume_kenma.png",
   ),
   createPlayer(
     "【制服】狐爪研磨",
@@ -36,7 +34,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.kozume_uniform,
+    "/assets/NEKOMA/kozume_kenma_uniform.png",
   ),
   createPlayer(
     "【夏祭り】狐爪研磨",
@@ -44,7 +42,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kozume_summerfestival,
+    "/assets/NEKOMA/kozume_kenma_summerfestival.png",
   ),
   createPlayer(
     "【1周年】狐爪研磨",
@@ -52,7 +50,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.kozume_1st,
+    "/assets/NEKOMA/kozume_kenma_1st.png",
   ),
   createPlayer(
     "【スパイ】狐爪研磨",
@@ -60,7 +58,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.kozume_spy,
+    "/assets/NEKOMA/kozume_kenma_spy.png",
   ),
   createPlayer(
     "【Xmas2】狐爪研磨",
@@ -68,7 +66,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kozume_xmas2,
+    "/assets/NEKOMA/kozume_kenma_xmas2.png",
   ),
   createPlayer(
     "【中学生】狐爪研磨",
@@ -76,7 +74,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.kozume_middleschool,
+    "/assets/NEKOMA/kozume_kenma_middleschool.png",
   ),
   createPlayer(
     "【ハロウィン】狐爪研磨",
@@ -84,7 +82,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.kozume_halloween,
+    "/assets/NEKOMA/kozume_kenma_halloween.png",
   ),
   createPlayer(
     "【寝正月】狐爪研磨",
@@ -92,7 +90,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kozume_lyinglow,
+    "/assets/NEKOMA/kozume_kenma_lyinglow.png",
   ),
   createPlayer(
     "【思い出】狐爪研磨",
@@ -100,7 +98,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "グー",
     "アイコニック",
-    Img.kozume_memories,
+    "/assets/NEKOMA/kozume_kenma_memories.png",
   ),
   createPlayer(
     "狐爪研磨",
@@ -108,7 +106,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "パー",
     "スーパーアイコニック",
-    Img.kozume_supericonic,
+    "/assets/NEKOMA/kozume_kenma_supericonic.png",
   ),
   createPlayer(
     "【スパイ】狐爪研磨",
@@ -116,7 +114,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "パー",
     "スーパーアイコニック",
-    Img.kozume_spy_supericonic,
+    "/assets/NEKOMA/kozume_kenma_spy_supericonic.png",
   ),
 
   // 黒尾鉄朗
@@ -126,7 +124,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.kuroo,
+    "/assets/NEKOMA/kuroo_tetsuro.png",
   ),
   createPlayer(
     "【制服】黒尾鉄朗",
@@ -134,7 +132,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.kuroo_uniform,
+    "/assets/NEKOMA/kuroo_tetsuro_uniform.png",
   ),
   createPlayer(
     "【夏祭り】黒尾鉄朗",
@@ -142,7 +140,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.kuroo_summerfestival,
+    "/assets/NEKOMA/kuroo_tetsuro_summerfestival.png",
   ),
   createPlayer(
     "【1周年】黒尾鉄朗",
@@ -150,7 +148,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.kuroo_1st,
+    "/assets/NEKOMA/kuroo_tetsuro_1st.png",
   ),
   createPlayer(
     "【キャンプ】黒尾鉄朗",
@@ -158,7 +156,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.kuroo_camp,
+    "/assets/NEKOMA/kuroo_tetsuro_camp.png",
   ),
   createPlayer(
     "【文化祭2】黒尾鉄朗",
@@ -166,7 +164,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.kuroo_culturefestival2,
+    "/assets/NEKOMA/kuroo_tetsuro_culturefestival2.png",
   ),
   createPlayer(
     "【中学生】黒尾鉄朗",
@@ -174,7 +172,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.kuroo_middleschool,
+    "/assets/NEKOMA/kuroo_tetsuro_middleschool.png",
   ),
   createPlayer(
     "【ハロウィン】黒尾鉄朗",
@@ -182,7 +180,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.kuroo_halloween,
+    "/assets/NEKOMA/kuroo_tetsuro_halloween.png",
   ),
   createPlayer(
     "【和装体験】黒尾鉄朗",
@@ -190,7 +188,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.kuroo_wasotaiken,
+    "/assets/NEKOMA/kuroo_tetsuro_wasotaiken.png",
   ),
   createPlayer(
     "【思い出】黒尾鉄朗",
@@ -198,7 +196,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.kuroo_memories,
+    "/assets/NEKOMA/kuroo_tetsuro_memories.png",
   ),
   createPlayer(
     "【文化祭2】黒尾鉄朗",
@@ -206,7 +204,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "パー",
     "スーパーアイコニック",
-    Img.kuroo_culturefestival2_supericonic,
+    "/assets/NEKOMA/kuroo_tetsuro_culturefestival2_supericonic.png",
   ),
 
   // 灰羽リエーフ
@@ -216,7 +214,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.haiba,
+    "/assets/NEKOMA/haiba_lev.png",
   ),
   createPlayer(
     "【探偵】灰羽リエーフ",
@@ -224,7 +222,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.haiba_detective,
+    "/assets/NEKOMA/haiba_lev_detective.png",
   ),
   createPlayer(
     "【路地裏】灰羽リエーフ",
@@ -232,7 +230,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.haiba_rojiura,
+    "/assets/NEKOMA/haiba_lev_rojiura.png",
   ),
   createPlayer(
     "【文化祭2】灰羽リエーフ",
@@ -240,7 +238,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.haiba_culturefestival2,
+    "/assets/NEKOMA/haiba_lev_culturefestival2.png",
   ),
   createPlayer(
     "【サバゲ2】灰羽リエーフ",
@@ -248,7 +246,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.haiba_survivalgame2,
+    "/assets/NEKOMA/haiba_lev_survivalgame2.png",
   ),
 
   // 夜久衛輔
@@ -258,7 +256,7 @@ export const nekoma: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.yaku,
+    "/assets/NEKOMA/yaku_morisuke.png",
   ),
   createPlayer(
     "【1周年】夜久衛輔",
@@ -266,7 +264,7 @@ export const nekoma: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.yaku_1st,
+    "/assets/NEKOMA/yaku_morisuke_1st.png",
   ),
   createPlayer(
     "【花火】夜久衛輔",
@@ -274,7 +272,7 @@ export const nekoma: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.yaku_fireworks,
+    "/assets/NEKOMA/yaku_morisuke_fireworks.png",
   ),
   createPlayer(
     "【2周年】夜久衛輔",
@@ -282,7 +280,7 @@ export const nekoma: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.yaku_2nd,
+    "/assets/NEKOMA/yaku_morisuke_2nd.png",
   ),
   createPlayer(
     "【水着2】夜久衛輔",
@@ -290,7 +288,7 @@ export const nekoma: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.yaku_swimwear2,
+    "/assets/NEKOMA/yaku_morisuke_swimwear2.png",
   ),
   createPlayer(
     "【Xmas3】夜久衛輔",
@@ -298,7 +296,7 @@ export const nekoma: PlayerData[] = [
     "Li",
     "グー",
     "アイコニック",
-    Img.yaku_xmas3,
+    "/assets/NEKOMA/yaku_morisuke_xmas3.png",
   ),
 
   // 福永招平
@@ -308,7 +306,7 @@ export const nekoma: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.fukunaga,
+    "/assets/NEKOMA/fukunaga_shohei.png",
   ),
   createPlayer(
     "【バーガー】福永招平",
@@ -316,7 +314,7 @@ export const nekoma: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.fukunaga_burgur,
+    "/assets/NEKOMA/fukunaga_shohei_burgur.png",
   ),
   createPlayer(
     "【アート2】福永招平",
@@ -324,7 +322,7 @@ export const nekoma: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.fukunaga_art2,
+    "/assets/NEKOMA/fukunaga_shohei_art2.png",
   ),
 
   // 犬岡走
@@ -334,7 +332,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.inuoka,
+    "/assets/NEKOMA/inuoka_so.png",
   ),
   createPlayer(
     "【新年】犬岡走",
@@ -342,7 +340,7 @@ export const nekoma: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.inuoka_newyear,
+    "/assets/NEKOMA/inuoka_so_newyear.png",
   ),
 
   // 山本猛虎
@@ -352,7 +350,7 @@ export const nekoma: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.yamamoto,
+    "/assets/NEKOMA/yamamoto_taketora.png",
   ),
   createPlayer(
     "【新年】山本猛虎",
@@ -360,7 +358,7 @@ export const nekoma: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.yamamoto_newyear,
+    "/assets/NEKOMA/yamamoto_taketora_newyear.png",
   ),
   createPlayer(
     "【和装体験】山本猛虎",
@@ -368,7 +366,7 @@ export const nekoma: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.yamamoto_wasotaiken,
+    "/assets/NEKOMA/yamamoto_taketora_wasotaiken.png",
   ),
 
   // 芝山優生
@@ -378,7 +376,7 @@ export const nekoma: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.shibayama,
+    "/assets/NEKOMA/shibayama_yuki.png",
   ),
   createPlayer(
     "【焼き芋】芝山優生",
@@ -386,18 +384,18 @@ export const nekoma: PlayerData[] = [
     "Li",
     "チョキ",
     "アイコニック",
-    Img.shibayama_yakiimo,
+    "/assets/NEKOMA/shibayama_yuki_yakiimo.png",
   ),
 
   // 海信行
-  createPlayer("海信行", "ユニフォーム", "WS", "パー", "アイコニック", Img.kai),
+  createPlayer("海信行", "ユニフォーム", "WS", "パー", "アイコニック", "/assets/NEKOMA/kai_nobuyuki.png"),
   createPlayer(
     "【遊園地】海信行",
     "遊園地",
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kai_amusementpark,
+    "/assets/NEKOMA/kai_nobuyuki_amusementpark.png",
   ),
 
   // 手白球彦
@@ -407,6 +405,6 @@ export const nekoma: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.teshiro,
+    "/assets/NEKOMA/teshiro_tamahiko.png",
   ),
 ];

@@ -1,7 +1,5 @@
-import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
-import {StaticImageData} from "next/image";
 
 const createPlayer = (
   name: string,
@@ -9,7 +7,7 @@ const createPlayer = (
   position: Position,
   type: Type,
   rarity: Class,
-  image: StaticImageData,
+  image: string,
 ): PlayerData => ({
   name: name,
   category: category,
@@ -28,7 +26,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.daisho,
+    "/assets/NOHEBI/daisho_suguru.png",
   ),
   createPlayer(
     "【新年】大将優",
@@ -36,7 +34,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.daisho_newyear,
+    "/assets/NOHEBI/daisho_suguru_newyear.png",
   ),
   createPlayer(
     "【カンフー】大将優",
@@ -44,7 +42,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.daisho_kungfu,
+    "/assets/NOHEBI/daisho_suguru_kungfu.png",
   ),
   createPlayer(
     "【妖】大将優",
@@ -52,7 +50,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.daisho_ayakashi,
+    "/assets/NOHEBI/daisho_suguru_ayakashi.png",
   ),
 
   // 沼井和馬
@@ -62,7 +60,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.numai,
+    "/assets/NOHEBI/numai_kazuma.png",
   ),
 
   // 潜尚保
@@ -72,7 +70,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.kuguri,
+    "/assets/NOHEBI/kuguri_naoyasu.png",
   ),
   createPlayer(
     "【バーガー】潜尚保",
@@ -80,7 +78,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "チョキ",
     "アイコニック",
-    Img.kuguri_burgur,
+    "/assets/NOHEBI/kuguri_naoyasu_burgur.png",
   ),
   createPlayer(
     "【寝正月】潜尚保",
@@ -88,7 +86,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.kuguri_lyinglow,
+    "/assets/NOHEBI/kuguri_naoyasu_lyinglow.png",
   ),
 
   // 高千穂恵也
@@ -98,7 +96,7 @@ export const nohebi: PlayerData[] = [
     "WS",
     "パー",
     "アイコニック",
-    Img.takachiho,
+    "/assets/NOHEBI/takachiho_yoshiya.png",
   ),
 
   // 広尾倖児
@@ -108,7 +106,7 @@ export const nohebi: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.hiroo,
+    "/assets/NOHEBI/hiroo_koji.png",
   ),
   createPlayer(
     "【カンフー】広尾倖児",
@@ -116,7 +114,7 @@ export const nohebi: PlayerData[] = [
     "MB",
     "チョキ",
     "アイコニック",
-    Img.hiroo_kungfu,
+    "/assets/NOHEBI/hiroo_koji_kungfu.png",
   ),
 
   // 先島伊澄
@@ -126,7 +124,7 @@ export const nohebi: PlayerData[] = [
     "S",
     "パー",
     "アイコニック",
-    Img.sakishima,
+    "/assets/NOHEBI/sakishima_isumi.png",
   ),
   createPlayer(
     "先島伊澄",
@@ -134,7 +132,7 @@ export const nohebi: PlayerData[] = [
     "S",
     "パー",
     "スーパーアイコニック",
-    Img.sakishima_supericonic,
+    "/assets/NOHEBI/sakishima_isumi_supericonic.png",
   ),
 
   // 背黒晃彦
@@ -144,7 +142,7 @@ export const nohebi: PlayerData[] = [
     "MB",
     "パー",
     "アイコニック",
-    Img.seguro,
+    "/assets/NOHEBI/seguro_akihiko.png",
   ),
 
   // 赤間颯
@@ -154,6 +152,6 @@ export const nohebi: PlayerData[] = [
     "Li",
     "パー",
     "アイコニック",
-    Img.akama,
+    "/assets/NOHEBI/akama_so.png",
   ),
 ];
