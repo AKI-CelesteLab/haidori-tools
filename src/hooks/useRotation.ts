@@ -1,8 +1,9 @@
 import {PlayerData} from "@/types/PlayerData";
-import {useState, useCallback, useMemo} from "react";
+import {useState, useCallback, useMemo, useEffect} from "react";
 import {PLAYER_LIST} from "@/data";
 import {FiltersType} from "@/types/Filters";
 import {initialMembers} from "@/data/initialMembers";
+import {loadTeam, saveTeam} from "@/lib/teamStorage";
 
 // 選択状態の型定義
 type Selection =
@@ -28,6 +29,28 @@ export const useRotation = () => {
   const [liSubstituteCounter, setLiSubstituteCounter] = useState(3);
   const [team, setTeam] = useState<PlayerData[]>(initialMembers);
   const [members, setMembers] = useState<PlayerData[]>(team);
+
+  // IndexedDB からチームを復元
+  useEffect(() => {
+    loadTeam()
+      .then((saved) => {
+        if (saved) {
+          setTeam(saved);
+          setMembers(saved);
+        }
+      })
+      .catch(console.error);
+  }, []);
+
+  // スタート前の変更を自動保存（デバウンス 400ms）
+  useEffect(() => {
+    if (isStart) return;
+    const timer = setTimeout(() => {
+      saveTeam(members).catch(console.error);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [members, isStart]);
+
   // フィルタ用
   const [filters, setFilters] = useState<FiltersType>({
     categories: [],
