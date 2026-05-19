@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -419,6 +418,14 @@ export const karasuno: PlayerData[] = [
     "パー",
     "アイコニック",
     "/assets/KARASUNO/nishinoya_yu_halloween.png",
+  ),
+  createPlayer(
+    "【思い出】西谷夕",
+    "思い出",
+    "Li",
+    "チョキ",
+    "アイコニック",
+    "/assets/KARASUNO/nishinoya_yu_memories.png",
   ),
 
   // 田中龍之介

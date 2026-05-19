@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -199,6 +198,14 @@ export const dateko: PlayerData[] = [
     "グー",
     "スーパーアイコニック",
     "/assets/DATEKO/koganegawa_kanji_supericonic.png",
+  ),
+  createPlayer(
+    "【職業体験】黄金川貫至",
+    "職業体験",
+    "S",
+    "パー",
+    "スーパーアイコニック",
+    "/assets/DATEKO/koganegawa_kanji_jobshadowing_supericonic.png",
   ),
 
   // 小原豊
