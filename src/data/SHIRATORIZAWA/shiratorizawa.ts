@@ -215,6 +215,14 @@ export const shiratorizawa: PlayerData[] = [
     "アイコニック",
     "/assets/SHIRATORIZAWA/goshiki_tsutomu_survivalgame2.png",
   ),
+  createPlayer(
+    "【梅雨2】五色工",
+    "梅雨2",
+    "WS",
+    "チョキ",
+    "アイコニック",
+    "/assets/SHIRATORIZAWA/goshiki_tsutomu_rainyseason2.png",
+  ),
 
   // 白布賢二郎
   createPlayer(
