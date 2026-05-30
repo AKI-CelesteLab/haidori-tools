@@ -41,6 +41,8 @@ export const PLAYER_LIST: PlayerData[] = [
   ...sarukawa, // 早流川
 ];
 
+// 184 x 237
+
 // import * as Img from "./index";
 
 // import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";

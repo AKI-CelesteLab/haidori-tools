@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -85,6 +84,14 @@ export const inarizaki: PlayerData[] = [
     "/assets/INARIZAKI/miya_atsumu_3rd.png",
   ),
   createPlayer(
+    "【思い出】宮侑",
+    "思い出",
+    "S",
+    "パー",
+    "アイコニック",
+    "/assets/INARIZAKI/miya_atsumu_memories.png",
+  ),
+  createPlayer(
     "【RPG】宮侑",
     "RPG",
     "S",
@@ -94,7 +101,14 @@ export const inarizaki: PlayerData[] = [
   ),
 
   // 宮治
-  createPlayer("宮治", "ユニフォーム", "WS", "パー", "アイコニック", "/assets/INARIZAKI/miya_osamu.png"),
+  createPlayer(
+    "宮治",
+    "ユニフォーム",
+    "WS",
+    "パー",
+    "アイコニック",
+    "/assets/INARIZAKI/miya_osamu.png",
+  ),
   createPlayer(
     "【RPG】宮治",
     "RPG",
@@ -142,6 +156,14 @@ export const inarizaki: PlayerData[] = [
     "パー",
     "アイコニック",
     "/assets/INARIZAKI/miya_osamu_3rd.png",
+  ),
+  createPlayer(
+    "【思い出】宮治",
+    "思い出",
+    "WS",
+    "チョキ",
+    "アイコニック",
+    "/assets/INARIZAKI/miya_osamu_memories.png",
   ),
   createPlayer(
     "【RPG】宮治",

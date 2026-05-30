@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -35,6 +34,14 @@ export const wakunan: PlayerData[] = [
     "グー",
     "アイコニック",
     "/assets/WAKUNAN/nakashima_takeru_spy.png",
+  ),
+  createPlayer(
+    "中島猛",
+    "ユニフォーム",
+    "WS",
+    "チョキ",
+    "スーパーアイコニック",
+    "/assets/WAKUNAN/nakashima_takeru_supericonic.png",
   ),
 
   // 白石優希

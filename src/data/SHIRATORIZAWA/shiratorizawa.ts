@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -149,6 +148,14 @@ export const shiratorizawa: PlayerData[] = [
     "チョキ",
     "アイコニック",
     "/assets/SHIRATORIZAWA/tendo_satori_xmas3.png",
+  ),
+  createPlayer(
+    "【思い出】天童覚",
+    "思い出",
+    "MB",
+    "パー",
+    "アイコニック",
+    "/assets/SHIRATORIZAWA/tendo_satori_memories.png",
   ),
   createPlayer(
     "【文化祭】天童覚",
